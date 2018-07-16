@@ -1,1 +1,1 @@
-{"categories":{"1":{"name":"Teste Category 1"},"2":{"name":"Teste Category 2"},"3":{"name":"Teste Category 3"}}}
+{"categories":{"1":{"name":"Teste Category 1","quizzes":{"1":{"name":"teste quizz1"}}},"2":{"name":"Teste Category 2","quizzes":{"1":{"name":"teste quizz2"}}},"3":{"name":"Teste Category 3","quizzes":{"1":{"name":"teste quizz3"}}}}}
