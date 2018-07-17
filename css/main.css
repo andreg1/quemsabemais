@@ -1,1 +1,7 @@
+.newQuestionTable td:last-child,.newQuestionTable th:last-child{
+    text-align: center;
+}
 
+#newQuestionForm textarea{
+    resize: none;
+}

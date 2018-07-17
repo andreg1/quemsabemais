@@ -5,6 +5,8 @@
 var data;
 var categoriesList;
 var nextCategoryID;
+var questions = [];
+var nextQuestionID;
 
 function Save() {
     $.ajax({
@@ -24,6 +26,7 @@ export function Load(loadCallback) {
     });
 }
 
+/* #region Category */
 
 export function createCategory(name){
     categoriesList[nextCategoryID] = {name};
@@ -50,3 +53,27 @@ export function getNextCategoryID(){
 export function categoryExists(categoryID){
     return this.categories[categoryID] === undefined ? false : true;
 }
+
+/* #endregion */
+/* #region Quizz */
+
+export function createQuizz(name, categoryID){
+    var quizzes = Object.keys(categoriesList[categoryID].quizzes);
+    var nextQuizzID = parseInt(quizzes[quizzes.length - 1]) + 1;
+    categoriesList[categoryID].quizzes[nextQuizzID] = {name};
+    Save();
+}
+
+export function saveQuestion(question){
+    questions.push(question);
+}
+export function getQuestions(){
+    return questions;
+}
+
+
+/* #endregion */
+
+
+
+

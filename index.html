@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,94 +12,170 @@
     <script src="js/vendors/bootstrap.min.js" defer></script>
     <script src="js/main.js" type="module" defer></script>
 </head>
+
 <body>
-    
-<h3>Categorias</h3>
-<table id="tblCategories">
-    <thead>
-        <th>Name</th>
-        <th>Actions</th>
-    </thead>
-    <tbody>
-        
-    </tbody>
-</table>
-<label id="lblCategoryError" class="text-danger"></label>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
 
-<form class="form-inline">
-    <input type="text" id="tbCategory" name="tbCategory" placeholder="Nome" class="form-control">
-    <button type="button" id="btNewCategory" class="btn btn-primary">Adicionar</button>
-</form>
+                <h3>Categorias</h3>
+                <table id="tblCategories" class="table">
+                    <thead>
+                        <th width="200">Nome</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
 
-<h3>Quizzes</h3>
-<table id="tblQuizzes">
-    <thead>
-        <th>Name</th>
-        <th>Category</th>
-        <th>Actions</th>
-    </thead>
-    <tbody>
-        
-    </tbody>
-</table>
-<label id="lblQuizzError" class="text-danger"></label>
+                    </tbody>
+                </table>
+                <label id="lblCategoryError" class="text-danger"></label>
 
-<br><br>
-<button id="btNewQuizz" class="btn btn-primary">Novo Quizz</button>
-<form id="newQuizzForm" class="d-none">
-    <h3>Criar Quizz</h3>
-    <label class="errorLabel text-danger"></label>
-    <div class="form-group">
-        <input type="text" name="quizzName" class="form-control" placeholder="Nome">
-    </div>
-    <div class="form-group">
-        <select name="quizzCategory" class="form-control"></select>
-    </div>
-
-    <h4>Perguntas</h4>
-    <div id="questionList" class="form-group">
-        <div class="list-group" id="questionsList">
-            <a href="#" class="list-group-item list-group-item-action">Não existem questões ainda</a>
+                <form class="form-inline">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newCategory">Nova categoria</button>
+                </form>
+            </div>
         </div>
-        <button id="addQuestion" class="btn btn-primary">Adicionar Questão</button>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+
+                <h3>Quizzes</h3>
+                <table id="tblQuizzes" class="table">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <label id="lblQuizzError" class="text-danger"></label>
+
+                <br>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newQuizz">Novo Quizz</button>
+
+            </div>
+        </div>
     </div>
-    <div id="newQuestionForm" class="d-none">
-        <table>
-            <thead>
-                <th>Opções</th>
-                <th>Opção Correcta</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="text" name="opcao1"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="opcao2"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="opcao3"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="opcao4"></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-        <button id="saveQuestion" class="btn btn-primary">Gravar Questão</button>
+
+    <div class="modal fade" id="newCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nova Categoria</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <input type="text" id="tbCategory" name="tbCategory" placeholder="Nome" class="form-control">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <br><br>
-    <div class="form-group">
-        <button id="saveQuizz" class="btn btn-primary">Gravar Quizz</button>
+
+    <div class="modal fade" id="newQuizz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Novo Quizz</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="newQuizzForm">
+                        <label class="errorLabel text-danger"></label>
+                        <div class="form-group">
+                            <input type="text" name="quizzName" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <select name="quizzCategory" class="form-control"></select>
+                        </div>
+
+                        <h4>Perguntas</h4>
+                        <div class="form-group">
+                            <div class="list-group" id="questionsList">
+                                <button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>
+                            </div>
+                        </div>
+                        <button type="button" id="addQuestion" class="btn btn-outline-primary">Adicionar Questão</button>
+                        <div id="newQuestionForm" class="d-none">
+                            <div class="form-group">
+                                <input type="text" name="question" class="form-control" placeholder="Pergunta">
+                            </div>
+                            <table class="table newQuestionTable">
+                                <thead>
+                                    <th>Opções</th>
+                                    <th>Opção Correcta</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="option1">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="correct_answer" value="1">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="option2">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="correct_answer" value="2">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="option3">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="correct_answer" value="3">
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="option4">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="correct_answer" value="4">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-group">
+                                <textarea name="answerExplanation" class="form-control" placeholder="Explicação"></textarea>
+                            </div>
+                            <button type="button" id="cancelQuestionButton" class="btn btn-outline-secondary">Cancelar</button>
+                            <button type="button" id="saveQuestionButton" class="btn btn-outline-primary">Gravar Questão</button>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- <div class="form-group">
+                            <button type="button" id="saveQuizz" class="btn btn-primary">Gravar Quizz</button>
+                        </div> -->
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
     </div>
-</form>
-
-
-
-
 
 
 </body>
+
 </html>
