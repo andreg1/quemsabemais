@@ -13,9 +13,8 @@
 </head>
 <body>
     
-
 <h3>Categorias</h3>
-<table id="tblCategorias">
+<table id="tblCategories">
     <thead>
         <th>Name</th>
         <th>Actions</th>
@@ -26,8 +25,10 @@
 </table>
 <label id="lblCategoryError" class="text-danger"></label>
 
-<input type="text" name="tbCategory" id="tbCategory">
-<button id="btNewCategory">Adicionar</button>
+<form class="form-inline">
+    <input type="text" id="tbCategory" name="tbCategory" placeholder="Nome" class="form-control">
+    <button id="btNewCategory" class="btn btn-primary">Adicionar</button>
+</form>
 
 <h3>Quizzes</h3>
 <table id="tblQuizzes">
@@ -42,12 +43,57 @@
 </table>
 <label id="lblQuizzError" class="text-danger"></label>
 
+<br><br>
+<button id="btNewQuizz" class="btn btn-primary">Novo Quizz</button>
+<form id="newQuizzForm" class="d-none">
+    <h3>Criar Quizz</h3>
+    <label class="errorLabel text-danger"></label>
+    <div class="form-group">
+        <input type="text" name="quizzName" class="form-control" placeholder="Nome">
+    </div>
+    <div class="form-group">
+        <select name="quizzCategory" class="form-control"></select>
+    </div>
 
-
-
-
- 
-
+    <h4>Perguntas</h4>
+    <div id="questionList" class="form-group">
+        <div class="list-group" id="questionsList">
+            <a href="#" class="list-group-item list-group-item-action">Não existem questões ainda</a>
+        </div>
+        <button id="addQuestion" class="btn btn-primary">Adicionar Questão</button>
+    </div>
+    <div id="newQuestionForm" class="d-none">
+        <table>
+            <thead>
+                <th>Opções</th>
+                <th>Opção Correcta</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="opcao1"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="opcao2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="opcao3"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="opcao4"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="saveQuestion" class="btn btn-primary">Gravar Questão</button>
+    </div>
+    <br><br>
+    <div class="form-group">
+        <button id="saveQuizz" class="btn btn-primary">Gravar Quizz</button>
+    </div>
+</form>
 
 
 
