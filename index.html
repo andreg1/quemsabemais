@@ -31,7 +31,7 @@
                 <label id="lblCategoryError" class="text-danger"></label>
 
                 <form class="form-inline">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newCategory">Nova categoria</button>
+                    <button type="button" id="newCategory" class="btn btn-primary">Nova categoria</button>
                 </form>
             </div>
         </div>
@@ -43,6 +43,7 @@
                     <thead>
                         <th>Nome</th>
                         <th>Categoria</th>
+                        <th>Nº Perguntas</th>
                         <th></th>
                     </thead>
                     <tbody>
@@ -52,46 +53,46 @@
                 <label id="lblQuizzError" class="text-danger"></label>
 
                 <br>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newQuizz">Novo Quizz</button>
+                <button type="button" id="newQuizz" class="btn btn-primary">Novo Quizz</button>
 
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="newCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Nova Categoria</h5>
+                    <h5 class="modal-title" id="categoryModalTitle">Nova Categoria</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form class="form-inline">
-                        <input type="text" id="tbCategory" name="tbCategory" placeholder="Nome" class="form-control">
+                        <input type="text" name="categoryName" placeholder="Nome" class="form-control">
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" id="saveCategory" class="btn btn-primary" data-dismiss="modal">Guardar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="newQuizz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="quizzModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Novo Quizz</h5>
+                    <h5 class="modal-title" id="quizzModalTitle">Novo Quizz</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
 
-                    <form id="newQuizzForm">
+                    <form id="quizzForm">
                         <label class="errorLabel text-danger"></label>
                         <div class="form-group">
                             <input type="text" name="quizzName" class="form-control" placeholder="Nome">
@@ -107,11 +108,11 @@
                             </div>
                         </div>
                         <button type="button" id="addQuestion" class="btn btn-outline-primary">Adicionar Questão</button>
-                        <div id="newQuestionForm" class="d-none">
+                        <div id="questionForm" class="d-none">
                             <div class="form-group">
                                 <input type="text" name="question" class="form-control" placeholder="Pergunta">
                             </div>
-                            <table class="table newQuestionTable">
+                            <table class="table questionTable">
                                 <thead>
                                     <th>Opções</th>
                                     <th>Opção Correcta</th>
@@ -168,8 +169,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" id="cancelQuizzButton" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" id="saveQuizzButton" class="btn btn-primary" data-dismiss="modal">Guardar</button>
                 </div>
             </div>
         </div>
