@@ -5,18 +5,19 @@
 var data;
 var categoriesList;
 var nextCategoryID;
-var questions = [];
-var nextQuestionID;
+var questionsList = [];
 
 function Save() {
+    //console.log(data);
     $.ajax({
-        url: "ajax/save.php",
-        data: data,
+        url: "../ajax/save.php",
+        data: { data },
+        method: "POST"
     });
 }
 
 export function Load(loadCallback) {
-    $.getJSON("/database.json", fileData => {
+    $.getJSON("../database.json", fileData => {
         data = fileData;
         categoriesList = fileData.categories;
         loadCallback();
@@ -57,37 +58,75 @@ export function categoryExists(categoryID) {
 /* #endregion */
 /* #region Quizz */
 
-export function saveQuizz(name, categoryID) {
-    var quizzes = Object.keys(categoriesList[categoryID].quizzes);
-    var nextQuizzID = parseInt(quizzes[quizzes.length - 1]) + 1;
-    categoriesList[categoryID].quizzes[nextQuizzID] = { name, questions: {} };
-    questions.forEach((value, index) => {
-        categoriesList[categoryID].quizzes[nextQuizzID].questions[index] = { value };
+function saveQuizz(quizzID, categoryID, name) {
+    if (!quizzID) quizzID = getNextQuizzID(categoryID);
+
+    categoriesList[categoryID].quizzes[quizzID] = { name, questions: {} };
+    questionsList.forEach((question, index) => {
+        categoriesList[categoryID].quizzes[quizzID].questions[index + 1] = question;
     });
-    questions = [];
-    Save();
+    questionsList = [];
+    //Save();
 }
 
-export function getCategoryByID(categoryID){
+export function createQuizz(categoryID, name) {
+    saveQuizz(0, categoryID, name);
+}
+
+export function updateQuizz(quizzID, newCategoryID, newName) {
+    var oldCategoryID = $('#quizzModal').attr('data-catId');
+    if (oldCategoryID == newCategoryID){
+        saveQuizz(quizzID, oldCategoryID, newName);
+    }
+    else{
+        console.log(categoriesList);
+        console.log(oldCategoryID);
+        console.log(quizzID);
+        delete categoriesList[oldCategoryID].quizzes[quizzID];
+        saveQuizz(0, newCategoryID, newName);
+    }
+}
+
+export function deleteQuizz(quizzID, categoryID){
+    delete categoriesList[categoryID].quizzes[quizzID];
+}
+
+export function getCategoryByID(categoryID) {
     return categoriesList[categoryID];
 }
 
 export function saveQuestion(question) {
-    questions.push(question);
+    questionsList.push(question);
 }
-export function loadQuestions(questions,callback) {
-    $.each(questions,(value)=>{
-        questions.push(value);
+export function loadQuestions(questions, callback) {
+    $.each(questions, (index, value) => {
+        questionsList.push(value);
     });
+    //console.log(questionsList);
     callback();
 }
 export function getQuestions() {
-    return questions;
+    return questionsList;
 }
 export function resetQuestions() {
-    questions = [];
+    questionsList = [];
 }
 
+function getNextQuizzID(categoryID) {
+    if (categoriesList[categoryID].quizzes === undefined) {
+        categoriesList[categoryID].quizzes = {};
+        return 1;
+    }
+    else {
+        let quizzes = Object.keys(categoriesList[categoryID].quizzes);
+
+        if(!quizzes.length){
+            return 1;
+        }
+
+        return parseInt(quizzes[quizzes.length - 1]) + 1;
+    }
+}
 
 /* #endregion */
 

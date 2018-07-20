@@ -49,7 +49,12 @@ $(document).ready(function () {
         $('#questionsList').html('<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>');
         db.resetQuestions();
     });
-    //engine.loadCategories();
+
+    $("#questionsList").on("click", "button.list-group-item-action", function(){
+        $('#questionsList .list-group-item-action.active').removeClass('active');
+        $(this).addClass('active');
+    });
+    
 });
 
 
@@ -116,7 +121,7 @@ function createCategory() {
 function editCategory($row) {
     var currentValue = $row.find('label[name=categoryName]').text();
     $('#categoryModal input[name=categoryName]').val(currentValue);
-    $('#categoryModalTitle').text(`Editar categoria: "${currentValue}"`);
+    $('#categoryModalTitle').text(`Editar Categoria: "${currentValue}"`);
     $('#categoryModal').attr('data-mode', 'edit');
     $('#categoryModal').attr('data-id', $row.attr('data-id'));
     $('#categoryModal').modal('toggle');
@@ -155,11 +160,11 @@ function saveQuizz() {
     var name = $("#quizzForm input[name=quizzName]").val();
     var categoryID = $("#quizzForm select[name=quizzCategory]").val();
     if(mode == "create"){
-        db.createQuizz(name, categoryID);
+        db.createQuizz(categoryID, name);
     }
     else{
-        var id = $('#categoryModal').attr('data-id');
-        db.updateQuizz(id, name);
+        var quizzID = $('#quizzModal').attr('data-id');
+        db.updateQuizz(quizzID, categoryID, name);
     }
     loadQuizzes();
 }
@@ -186,9 +191,15 @@ function saveQuestion() {
 
 function loadQuestionsList() {
     $("#questionsList button").remove();
-    db.getQuestions().forEach((value) => {
-        $("#questionsList").append(`<button type="button" class="list-group-item list-group-item-action">${value.question}</button>`);
-    });
+    var questions = db.getQuestions();
+    if(questions.length){
+        db.getQuestions().forEach((value) => {
+            $("#questionsList").append(`<button type="button" class="list-group-item list-group-item-action">${value.question}</button>`);
+        });
+    }
+    else{
+        $('#questionsList').html('<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>');
+    }
 }
 
 
@@ -196,11 +207,12 @@ function loadQuizzes() {
     $("#tblQuizzes tbody").empty();
     $.each(db.getCategories(), (categoryID, category) => {
         $.each(category.quizzes, (quizzID, quizz) => {
+            var questionCount = quizz.questions === undefined ? 0 : Object.keys(quizz.questions).length;
             $("#tblQuizzes tbody").append(`
                 <tr data-id=${quizzID} data-catId=${categoryID}>
                     <td>${quizz.name}</td>
                     <td>${category.name}</td>
-                    <td>${Object.keys(quizz.questions).length}</td>
+                    <td>${questionCount}</td>
                     <td>
                         <button type="button" class="editButton btn btn-primary">Editar</button>
                         <button type="button" class="deleteButton btn btn-primary">Apagar</button>
@@ -213,6 +225,7 @@ function loadQuizzes() {
 //modal interactions
 function createQuizz() {
     hardResetQuizzModal();
+    $('#quizzModal #quizzModalTitle').text('Novo Quizz');
     $('#quizzModal').attr('data-mode', 'create');
     $('#quizzModal').modal('toggle');
 }
@@ -225,12 +238,23 @@ function editQuizz($row) {
 
     $('#quizzModal input[name=quizzName]').val(quizz.name);
     $('#quizzModal select[name=quizzCategory]').val(categoryID);
-    $('#quizzModal #quizzModalTitle').text(`Editar quizz: "${quizz.name}"`);
+    $('#quizzModal #quizzModalTitle').text(`Editar Quizz: "${quizz.name}"`);
     $('#quizzModal').attr('data-mode', 'edit');
     $('#quizzModal').attr('data-id', $row.attr('data-id'));
+    $('#quizzModal').attr('data-catId', $row.attr('data-catId'));
 
     db.loadQuestions(quizz.questions, loadQuestionsList);
+    //console.log(quizz.questions);
     $('#quizzModal').modal('toggle');
+}
+
+function deleteQuizz($row) {
+    var quizzID = $row.attr('data-id');
+    var categoryID = $row.attr('data-catId');
+
+    db.deleteQuizz(quizzID, categoryID);
+
+    loadQuizzes();
 }
 
 function hardResetQuizzModal(){
