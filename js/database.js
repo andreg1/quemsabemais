@@ -4,9 +4,12 @@
 
 var data;
 var categoriesList;
+var quizzesList;
+
 var nextCategoryID;
 var questionsList = [];
 var editedQuestion;
+var editedQuizz;
 
 function Save() {
     //console.log(data);
@@ -20,7 +23,9 @@ function Save() {
 export function Load(loadCallback) {
     $.getJSON("../database.json", fileData => {
         data = fileData;
-        categoriesList = fileData.categories;
+        categoriesList = data.categories;
+        quizzesList = data.quizzes;
+
         loadCallback();
 
         var categories = Object.keys(categoriesList);
@@ -37,6 +42,9 @@ export function createCategory(name) {
 export function getCategories() {
     return categoriesList;
 }
+export function getQuizzes() {
+    return quizzesList;
+}
 
 export function updateCategory(id, newName) {
     categoriesList[id].name = newName;
@@ -48,10 +56,6 @@ export function deleteCategory(id) {
     Save();
 }
 
-export function getNextCategoryID() {
-    return nextCategoryID++;
-}
-
 export function categoryExists(categoryID) {
     return this.categories[categoryID] === undefined ? false : true;
 }
@@ -59,34 +63,25 @@ export function categoryExists(categoryID) {
 /* #endregion */
 /* #region Quizz */
 
-function saveQuizz(quizzID, categoryID, name) {
-    if (!quizzID) quizzID = getNextQuizzID(categoryID);
+export function saveQuizz(categoryID, name) {
+    var quizzID = editedQuizz !== undefined ? editedQuizz : getNextQuizzID();
 
-    categoriesList[categoryID].quizzes[quizzID] = { name, questions: {} };
-    questionsList.forEach((question, index) => {
-        categoriesList[categoryID].quizzes[quizzID].questions[index + 1] = question;
-    });
+    quizzesList[quizzID] = { name, categoryID, questions: {} };
+    // questionsList.forEach((question, index) => {
+    //     categoriesList[categoryID].quizzes[quizzID].questions[index + 1] = question;
+    // });
     questionsList = [];
-    //Save();
+    editedQuizz = undefined;
+    Save();
 }
 
-export function createQuizz(categoryID, name) {
-    saveQuizz(0, categoryID, name);
+export function editQuizz(quizzID){
+    editedQuizz = quizzID;
+    return quizzesList[quizzID];
 }
 
-export function updateQuizz(quizzID, newCategoryID, newName) {
-    var oldCategoryID = $('#quizzModal').attr('data-catId');
-    if (oldCategoryID == newCategoryID){
-        saveQuizz(quizzID, oldCategoryID, newName);
-    }
-    else{
-        delete categoriesList[oldCategoryID].quizzes[quizzID];
-        saveQuizz(0, newCategoryID, newName);
-    }
-}
-
-export function deleteQuizz(quizzID, categoryID){
-    delete categoriesList[categoryID].quizzes[quizzID];
+export function deleteQuizz(quizzID) {
+    delete quizzesList[quizzID];
 }
 
 export function getCategoryByID(categoryID) {
@@ -94,10 +89,10 @@ export function getCategoryByID(categoryID) {
 }
 
 export function saveQuestion(question) {
-    if(editedQuestion !== undefined){
+    if (editedQuestion !== undefined) {
         questionsList[editedQuestion] = question;
     }
-    else{
+    else {
         questionsList.push(question);
     }
 }
@@ -108,12 +103,12 @@ export function loadQuestions(questions, callback) {
     //console.log(questionsList);
     callback();
 }
-export function editQuestion(index){
+export function editQuestion(index) {
     editedQuestion = index;
     return questionsList[index];
 }
-export function removeQuestion(index){
-    questionsList.splice(index,1);
+export function removeQuestion(index) {
+    questionsList.splice(index, 1);
 }
 export function getQuestions() {
     return questionsList;
@@ -122,20 +117,14 @@ export function resetQuestions() {
     questionsList = [];
 }
 
-function getNextQuizzID(categoryID) {
-    if (categoriesList[categoryID].quizzes === undefined) {
-        categoriesList[categoryID].quizzes = {};
+function getNextQuizzID() {
+    let quizzes = Object.keys(quizzesList);
+
+    if (!quizzes.length) {
         return 1;
     }
-    else {
-        let quizzes = Object.keys(categoriesList[categoryID].quizzes);
 
-        if(!quizzes.length){
-            return 1;
-        }
-
-        return parseInt(quizzes[quizzes.length - 1]) + 1;
-    }
+    return parseInt(quizzes[quizzes.length - 1]) + 1;
 }
 
 /* #endregion */

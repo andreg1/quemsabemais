@@ -54,17 +54,17 @@ $(document).ready(function () {
         db.resetQuestions();
     });
 
-    $("#questionsList").on("click", "button.list-group-item-action", function(){
+    $("#questionsList").on("click", "button.list-group-item-action", function () {
         $('#questionsList .list-group-item-action.active').removeClass('active');
         $(this).addClass('active');
         var index = $('#questionsList .list-group-item-action').index($(this));
         editQuestion(index);
     });
-    $('#removeQuestionButton').click(()=>{
+    $('#removeQuestionButton').click(() => {
         removeQuestion()
         hideQuestionView();
     });
-    
+
 });
 
 
@@ -102,10 +102,10 @@ function loadCategories() {
 function saveCategory() {
     var mode = $('#categoryModal').attr('data-mode');
     var name = $('input[name=categoryName]').val();
-    if(mode == "create"){
+    if (mode == "create") {
         db.createCategory(name);
     }
-    else{
+    else {
         var id = $('#categoryModal').attr('data-id');
         db.updateCategory(id, name);
     }
@@ -165,17 +165,11 @@ function loadCategoriesDropdown() {
 
 
 function saveQuizz() {
-    var mode = $('#quizzModal').attr('data-mode');
-    
     var name = $("#quizzForm input[name=quizzName]").val();
     var categoryID = $("#quizzForm select[name=quizzCategory]").val();
-    if(mode == "create"){
-        db.createQuizz(categoryID, name);
-    }
-    else{
-        var quizzID = $('#quizzModal').attr('data-id');
-        db.updateQuizz(quizzID, categoryID, name);
-    }
+    
+    db.saveQuizz(categoryID, name);
+
     loadQuizzes();
 }
 
@@ -199,19 +193,19 @@ function saveQuestion() {
     hideQuestionView();
 }
 
-function editQuestion(index){
+function editQuestion(index) {
     var data = db.editQuestion(index);
     $('#questionForm input[name=question]').val(data.question);
     $('#questionForm textarea').val(data.explanation);
-    for(var index in data.options){
+    for (var index in data.options) {
         $(`#questionForm input[name=option${index}]`).val(data.options[index]);
     }
-    $(`#questionForm input[type=radio][value=${data.options.correctAnswer}]`).prop("checked","true");
+    $(`#questionForm input[type=radio][value=${data.options.correctAnswer}]`).prop("checked", "true");
     showQuestionView();
     $('#removeQuestionButton').removeClass('d-none');
 }
 
-function removeQuestion(){
+function removeQuestion() {
     var index = $('#questionsList .list-group-item-action').index($('#questionsList .list-group-item-action.active'));
     db.removeQuestion(index);
     hideQuestionView();
@@ -223,12 +217,12 @@ function removeQuestion(){
 function loadQuestionsList() {
     $("#questionsList button").remove();
     var questions = db.getQuestions();
-    if(questions.length){
+    if (questions.length) {
         db.getQuestions().forEach((value) => {
             $("#questionsList").append(`<button type="button" class="list-group-item list-group-item-action">${value.question}</button>`);
         });
     }
-    else{
+    else {
         $('#questionsList').html('<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>');
     }
 }
@@ -236,20 +230,18 @@ function loadQuestionsList() {
 
 function loadQuizzes() {
     $("#tblQuizzes tbody").empty();
-    $.each(db.getCategories(), (categoryID, category) => {
-        $.each(category.quizzes, (quizzID, quizz) => {
-            var questionCount = quizz.questions === undefined ? 0 : Object.keys(quizz.questions).length;
-            $("#tblQuizzes tbody").append(`
-                <tr data-id=${quizzID} data-catId=${categoryID}>
-                    <td>${quizz.name}</td>
-                    <td>${category.name}</td>
-                    <td>${questionCount}</td>
-                    <td>
-                        <button type="button" class="editButton btn btn-primary">Editar</button>
-                        <button type="button" class="deleteButton btn btn-primary">Apagar</button>
-                    </td>
-                </tr>`);
-        });
+    $.each(db.getQuizzes(), (quizzID, quizz) => {
+        var questionCount = quizz.questions === undefined ? 0 : Object.keys(quizz.questions).length;
+        $("#tblQuizzes tbody").append(`
+            <tr data-id=${quizzID}>
+                <td>${quizz.name}</td>
+                <td>${db.getCategoryByID(quizz.categoryID).name}</td>
+                <td>${questionCount}</td>
+                <td>
+                    <button type="button" class="editButton btn btn-primary">Editar</button>
+                    <button type="button" class="deleteButton btn btn-primary">Apagar</button>
+                </td>
+            </tr>`);
     });
 }
 
@@ -262,10 +254,9 @@ function createQuizz() {
 }
 function editQuizz($row) {
     softResetQuizzModal();
-    var categoryID = $row.attr('data-catId');
+
     var quizzID = $row.attr('data-id');
-    var category = db.getCategoryByID(categoryID,quizzID);
-    var quizz = category.quizzes[quizzID];
+    var quizz = db.editQuizz(quizzID);
 
     $('#quizzModal input[name=quizzName]').val(quizz.name);
     $('#quizzModal select[name=quizzCategory]').val(categoryID);
@@ -281,19 +272,18 @@ function editQuizz($row) {
 
 function deleteQuizz($row) {
     var quizzID = $row.attr('data-id');
-    var categoryID = $row.attr('data-catId');
 
-    db.deleteQuizz(quizzID, categoryID);
+    db.deleteQuizz(quizzID);
 
     loadQuizzes();
 }
 
-function hardResetQuizzModal(){
+function hardResetQuizzModal() {
     softResetQuizzModal();
     $('#quizzForm input[type=text], #quizzForm textarea').val('');
     $('#questionsList').html('<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>');
 }
-function softResetQuizzModal(){
+function softResetQuizzModal() {
     $('#addQuestion').show();
     $('#questionForm').addClass('d-none');
     loadCategoriesDropdown();
@@ -302,7 +292,7 @@ function softResetQuizzModal(){
 
 //general use
 
-function clearQuestionView(){
+function clearQuestionView() {
     $('#questionForm input[type=text], #questionForm textarea').val('');
     $('#questionForm input[type=radio]').prop('checked', false);
 }

@@ -1,50 +1,51 @@
 {
     "categories": {
         "1": {
-            "name": "Teste Category 1",
-            "quizzes": {
-                "1": {
-                    "name": "teste quizz1"
-                },
-                "2": {
-                    "name": "Quizz1",
-                    "questions": {
-                        "1": {
-                            "question": "Pergunta 1?",
-                            "options": {
-                                "1": "a",
-                                "2": "b",
-                                "3": "c",
-                                "4": "d",
-                                "correctAnswer": "2"
-                            },
-                            "explanation": "Explicacao"
-                        },
-                        "2": {
-                            "question": "Pergunta 2?",
-                            "options": {
-                                "1": "ab",
-                                "2": "cd",
-                                "3": "ef",
-                                "4": "gh",
-                                "correctAnswer": "3"
-                            },
-                            "explanation": "Explicacao"
-                        }
-                    }
-                }
-            }
+            "name": "Teste Category 1"
         },
         "2": {
-            "name": "Teste Category 2",
-            "quizzes": {
-                "1": {
-                    "name": "teste quizz2"
-                }
-            }
+            "name": "Teste Category 2"
         },
         "4": {
             "name": "Nova Categoria"
+        }
+    },
+    "quizzes": {
+        "1": {
+            "categoryID": 1,
+            "name": "teste quizz1"
+        },
+        "2": {
+            "categoryID": 4,
+            "name": "Quizz1",
+            "questions": {
+                "1": {
+                    "question": "Pergunta 1?",
+                    "options": {
+                        "1": "a",
+                        "2": "b",
+                        "3": "c",
+                        "4": "d",
+                        "correctAnswer": "2"
+                    },
+                    "explanation": "Explicacao"
+                },
+                "2": {
+                    "question": "Pergunta 2?",
+                    "options": {
+                        "1": "ab",
+                        "2": "cd",
+                        "3": "ef",
+                        "4": "gh",
+                        "correctAnswer": "3"
+                    },
+                    "explanation": "Explicacao"
+                }
+            }
+        },
+        "3": {
+            "categoryID": 1,
+            "name": "teste quizz2"
         }
     }
 }
