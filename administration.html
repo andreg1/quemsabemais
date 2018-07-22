@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quem sabe mais</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/vendors/jquery-3.3.1.min.js" defer></script>
+    <script src="js/vendors/bootstrap.min.js" defer></script>
+    <script src="js/admin/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="loginSection" class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-10 col-sm-6 col-md-3 jumbotron">
+                <form>
+                    <input type="text" name="username" class="form-control" placeholder="Nome de utilizador">
+                    <input type="password" name="password" class="form-control" placeholder="Password">
+                    <button type="button" id="loginButton" class="btn btn-primary form-control">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="backOffice" style="display:none;">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+
+                    <h3>Categorias</h3>
+                    <table id="tblCategories" class="table">
+                        <thead>
+                            <th width="200">Nome</th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <label id="lblCategoryError" class="text-danger"></label>
+
+                    <form class="form-inline">
+                        <button type="button" id="newCategory" class="btn btn-primary">Nova categoria</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+
+                    <h3>Quizzes</h3>
+                    <table id="tblQuizzes" class="table">
+                        <thead>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Nº Perguntas</th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <label id="lblQuizzError" class="text-danger"></label>
+
+                    <br>
+                    <button type="button" id="newQuizz" class="btn btn-primary">Novo Quizz</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="categoryModalTitle">Nova Categoria</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <input type="text" name="categoryName" placeholder="Nome" class="form-control">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cancelCategory" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" id="saveCategory" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="quizzModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="quizzModalTitle">Novo Quizz</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form id="quizzForm">
+                            <label class="errorLabel text-danger"></label>
+                            <div class="form-group">
+                                <input type="text" name="quizzName" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <select name="quizzCategory" class="form-control"></select>
+                            </div>
+
+                            <h4>Perguntas</h4>
+                            <div class="form-group">
+                                <div class="list-group" id="questionsList">
+                                    <button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>
+                                </div>
+                            </div>
+                            <button type="button" id="addQuestion" class="btn btn-outline-primary">Adicionar Questão</button>
+                            <div id="questionForm" class="d-none">
+                                <div class="form-group">
+                                    <input type="text" name="question" class="form-control" placeholder="Pergunta">
+                                </div>
+                                <table class="table questionTable">
+                                    <thead>
+                                        <th>Opções</th>
+                                        <th>Opção Correcta</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="option1">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="correct_answer" value="1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="option2">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="correct_answer" value="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="option3">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="correct_answer" value="3">
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="option4">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="correct_answer" value="4">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="form-group">
+                                    <textarea name="answerExplanation" class="form-control" placeholder="Explicação"></textarea>
+                                </div>
+                                <button type="button" id="cancelQuestionButton" class="btn btn-outline-secondary">Cancelar</button>
+                                <button type="button" id="removeQuestionButton" class="btn btn-outline-danger d-none">Remover</button>
+                                <button type="button" id="saveQuestionButton" class="btn btn-outline-primary">Gravar Questão</button>
+
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cancelQuizzButton" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" id="saveQuizzButton" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

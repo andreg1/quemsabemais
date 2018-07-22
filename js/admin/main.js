@@ -1,58 +1,62 @@
-
 import * as db from './database.js';
-
-
 
 $(document).ready(function () {
     db.Load(loadDashboard);
 
-    $("#tblCategories").on("click", "button.deleteButton", (event) => {
-        deleteCategory($(event.target).parents("tr"));
-    });
+    $('#loginButton').click(()=>{
+        Login();
+    })
+
     $("#newCategory").click(() => {
         createCategory();
     });
-    $("#newQuizz").click(() => {
-        createQuizz();
-    });
-
     $('#saveCategory').click(() => {
         saveCategory();
     });
-
-    $("#tblQuizzes").on("click", "button.deleteButton", (event) => {
-        deleteQuizz($(event.target).parents("tr"));
+    $('#cancelCategory').click(() => {
+        db.cancelCategoryEdit();
     });
-
     $("#tblCategories").on("click", "button.editButton", (event) => {
         editCategory($(event.target).parents("tr"));
+    });
+    $("#tblCategories").on("click", "button.deleteButton", (event) => {
+        deleteCategory($(event.target).parents("tr"));
+    });
+
+
+    $("#newQuizz").click(() => {
+        createQuizz();
+    });
+    $("#saveQuizzButton").click(() => {
+        saveQuizz();
+    });
+    $('#cancelQuizzButton').click(() => {
+        db.cancelQuizzEdit();
     });
     $("#tblQuizzes").on("click", "button.editButton", (event) => {
         editQuizz($(event.target).parents("tr"));
     });
-
-    $("#saveQuizzButton").click(() => {
-        saveQuizz();
+    $("#tblQuizzes").on("click", "button.deleteButton", (event) => {
+        deleteQuizz($(event.target).parents("tr"));
     });
 
-    $('#saveQuestionButton').click(() => {
-        saveQuestion();
-    });
+
     $('#addQuestion').click(() => {
         clearQuestionView();
         showQuestionView();
     });
+    $('#saveQuestionButton').click(() => {
+        saveQuestion();
+    });
     $('#cancelQuestionButton').click(() => {
         hideQuestionView();
+        $('#questionsList .list-group-item-action.active').removeClass('active');
     });
-    $('#cancelQuizzButton').click(() => {
-        //reset modal state
-        $('#addQuestion').show();
-        $('#questionForm').addClass('d-none');
-        $('#quizzForm input[type=text], #quizzForm textarea').val('');
-        $('#questionsList').html('<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>');
-        db.resetQuestions();
+    $('#removeQuestionButton').click(() => {
+        removeQuestion()
+        hideQuestionView();
     });
+
 
     $("#questionsList").on("click", "button.list-group-item-action", function () {
         $('#questionsList .list-group-item-action.active').removeClass('active');
@@ -60,35 +64,35 @@ $(document).ready(function () {
         var index = $('#questionsList .list-group-item-action').index($(this));
         editQuestion(index);
     });
-    $('#removeQuestionButton').click(() => {
-        removeQuestion()
-        hideQuestionView();
+    $("#categoryModal").on("hidden.bs.modal", function () {
+        db.cancelCategoryEdit();
     });
-
+    $("#quizzModal").on("hidden.bs.modal", function () {
+        db.cancelQuizzEdit();
+    });
 });
 
+function Login(){
+    var username = $('#loginSection input[name=username]').val();
+    var password = $('#loginSection input[name=password]').val();
+    if(db.checkLogin(username,password.hashCode())){
+        $('#loginSection').hide();
+        $('#backOffice').show();
+    }
+}
 
 function loadDashboard() {
     loadCategories();
     loadQuizzes();
 }
 
-
-
 /* #region Category */
-
-// function createCategory(name) {
-//     db.createCategory(name);
-
-//     loadCategories();
-// }
 
 function loadCategories() {
     $("#tblCategories tbody").empty();
-
     $.each(db.getCategories(), (index, value) => {
         $('#tblCategories tbody').append(`
-            <tr data-ID="${index}">
+            <tr data-id="${index}">
                 <td><label name="categoryName" class="form-control">${value.name}</label></td>
                 <td>
                     <button type="button" class="editButton btn btn-primary">Editar</button>
@@ -98,81 +102,77 @@ function loadCategories() {
         `);
     });
 }
-
-function saveCategory() {
-    var mode = $('#categoryModal').attr('data-mode');
-    var name = $('input[name=categoryName]').val();
-    if (mode == "create") {
-        db.createCategory(name);
-    }
-    else {
-        var id = $('#categoryModal').attr('data-id');
-        db.updateCategory(id, name);
-    }
-    loadCategories();
-}
-
-function deleteCategory($row) {
-    var id = $row.attr("data-ID");
-
-    db.deleteCategory(id);
-
-    loadCategories();
-    loadQuizzes();
-}
-
-//modal interactions
 function createCategory() {
     $('#categoryModalTitle').text("Nova Categoria");
     $('#categoryModal input[name=categoryName]').val('');
-    $('#categoryModal').attr('data-mode', 'create');
     $('#categoryModal').modal('toggle');
 }
 function editCategory($row) {
-    var currentValue = $row.find('label[name=categoryName]').text();
-    $('#categoryModal input[name=categoryName]').val(currentValue);
-    $('#categoryModalTitle').text(`Editar Categoria: "${currentValue}"`);
-    $('#categoryModal').attr('data-mode', 'edit');
-    $('#categoryModal').attr('data-id', $row.attr('data-id'));
+    var categoryID = $row.data('id');
+    var category = db.editCategory(categoryID);
+    $('#categoryModal input[name=categoryName]').val(category.name);
+    $('#categoryModalTitle').text(`Editar Categoria: "${category.name}"`);
     $('#categoryModal').modal('toggle');
 }
-
-
-// function viewMode($row) {
-//     $row.html(`
-//         <td>${$row.find("input[name=categoryName]").val()}</td>
-//         <td><button type="button" class="editButton btn btn-primary">Editar</button></td>
-//         <td><button type="button" class="deleteButton btn btn-primary">Apagar</button></td>
-//     `);
-// }
-
-function loadCategoriesDropdown() {
-    $("select[name=quizzCategory] option").remove();
-
-    //add placeholder
-    $("select[name=quizzCategory]").append(`<option value="-1">Escolha uma Categoria</option>`);
-
-    $.each(db.getCategories(), (index, category) => {
-        $("select[name=quizzCategory]").append(`<option value="${index}">${category.name}</option>`);
-    });
+function deleteCategory($row) {
+    var id = $row.data("id");
+    db.deleteCategory(id);
+    loadCategories();
+    loadQuizzes();
+}
+function saveCategory() {
+    var name = $('#categoryModal input[name=categoryName]').val();
+    db.saveCategory(name);
+    loadCategories();
 }
 
 /* #endregion */
-
-
-
 /* #region Quizz */
 
+function loadQuizzes() {
+    $("#tblQuizzes tbody").empty();
+    $.each(db.getQuizzes(), (quizzID, quizz) => {
+        var questionCount = quizz.questions === undefined ? 0 : Object.keys(quizz.questions).length;
+        var categoryName = quizz.categoryID !== undefined ? db.getCategoryByID(quizz.categoryID).name : "Sem categoria";
+        $("#tblQuizzes tbody").append(`
+            <tr data-id=${quizzID}>
+                <td>${quizz.name}</td>
+                <td>${categoryName}</td>
+                <td>${questionCount}</td>
+                <td>
+                    <button type="button" class="editButton btn btn-primary">Editar</button>
+                    <button type="button" class="deleteButton btn btn-primary">Apagar</button>
+                </td>
+            </tr>`);
+    });
+}
 
+function createQuizz() {
+    hardResetQuizzModal();
+    $('#quizzModal #quizzModalTitle').text('Novo Quizz');
+    $('#quizzModal').modal('toggle');
+}
+function editQuizz($row) {
+    softResetQuizzModal();
+    var quizzID = $row.data('id');
+    var quizz = db.editQuizz(quizzID);
+    $('#quizzModal input[name=quizzName]').val(quizz.name);
+    $('#quizzModal select[name=quizzCategory]').val(quizz.categoryID);
+    $('#quizzModal #quizzModalTitle').text(`Editar Quizz: "${quizz.name}"`);
+    db.loadQuestions(quizz.questions, loadQuestionsList);
+    $('#quizzModal').modal('toggle');
+}
+function deleteQuizz($row) {
+    var quizzID = $row.data('id');
+    db.deleteQuizz(quizzID);
+    loadQuizzes();
+}
 function saveQuizz() {
     var name = $("#quizzForm input[name=quizzName]").val();
     var categoryID = $("#quizzForm select[name=quizzCategory]").val();
-    
     db.saveQuizz(categoryID, name);
-
     loadQuizzes();
 }
-
 function saveQuestion() {
     var question = $("#questionForm input[name=question]").val();
     var explanation = $("#questionForm textarea[name=answerExplanation]").val();
@@ -187,12 +187,10 @@ function saveQuestion() {
         }
         _question.options[optionID] = option;
     });
-
     db.saveQuestion(_question);
     loadQuestionsList();
     hideQuestionView();
 }
-
 function editQuestion(index) {
     var data = db.editQuestion(index);
     $('#questionForm input[name=question]').val(data.question);
@@ -204,16 +202,19 @@ function editQuestion(index) {
     showQuestionView();
     $('#removeQuestionButton').removeClass('d-none');
 }
-
 function removeQuestion() {
     var index = $('#questionsList .list-group-item-action').index($('#questionsList .list-group-item-action.active'));
     db.removeQuestion(index);
     hideQuestionView();
     loadQuestionsList();
 }
-
-
-
+function loadCategoriesDropdown() {
+    $("select[name=quizzCategory] option").remove();
+    $("select[name=quizzCategory]").append(`<option value="-1">Escolha uma Categoria</option>`);
+    $.each(db.getCategories(), (index, category) => {
+        $("select[name=quizzCategory]").append(`<option value="${index}">${category.name}</option>`);
+    });
+}
 function loadQuestionsList() {
     $("#questionsList button").remove();
     var questions = db.getQuestions();
@@ -227,57 +228,7 @@ function loadQuestionsList() {
     }
 }
 
-
-function loadQuizzes() {
-    $("#tblQuizzes tbody").empty();
-    $.each(db.getQuizzes(), (quizzID, quizz) => {
-        var questionCount = quizz.questions === undefined ? 0 : Object.keys(quizz.questions).length;
-        $("#tblQuizzes tbody").append(`
-            <tr data-id=${quizzID}>
-                <td>${quizz.name}</td>
-                <td>${db.getCategoryByID(quizz.categoryID).name}</td>
-                <td>${questionCount}</td>
-                <td>
-                    <button type="button" class="editButton btn btn-primary">Editar</button>
-                    <button type="button" class="deleteButton btn btn-primary">Apagar</button>
-                </td>
-            </tr>`);
-    });
-}
-
 //modal interactions
-function createQuizz() {
-    hardResetQuizzModal();
-    $('#quizzModal #quizzModalTitle').text('Novo Quizz');
-    $('#quizzModal').attr('data-mode', 'create');
-    $('#quizzModal').modal('toggle');
-}
-function editQuizz($row) {
-    softResetQuizzModal();
-
-    var quizzID = $row.attr('data-id');
-    var quizz = db.editQuizz(quizzID);
-
-    $('#quizzModal input[name=quizzName]').val(quizz.name);
-    $('#quizzModal select[name=quizzCategory]').val(categoryID);
-    $('#quizzModal #quizzModalTitle').text(`Editar Quizz: "${quizz.name}"`);
-    $('#quizzModal').attr('data-mode', 'edit');
-    $('#quizzModal').attr('data-id', $row.attr('data-id'));
-    $('#quizzModal').attr('data-catId', $row.attr('data-catId'));
-
-    db.loadQuestions(quizz.questions, loadQuestionsList);
-    //console.log(quizz.questions);
-    $('#quizzModal').modal('toggle');
-}
-
-function deleteQuizz($row) {
-    var quizzID = $row.attr('data-id');
-
-    db.deleteQuizz(quizzID);
-
-    loadQuizzes();
-}
-
 function hardResetQuizzModal() {
     softResetQuizzModal();
     $('#quizzForm input[type=text], #quizzForm textarea').val('');
@@ -291,31 +242,31 @@ function softResetQuizzModal() {
 }
 
 //general use
-
 function clearQuestionView() {
     $('#questionForm input[type=text], #questionForm textarea').val('');
     $('#questionForm input[type=radio]').prop('checked', false);
 }
-
 function showQuestionView() {
     //clear fields
     $('#addQuestion').hide();
     $('#questionForm').removeClass('d-none');
 }
-
 function hideQuestionView() {
     $('#addQuestion').show();
     $('#questionForm').addClass('d-none');
     $('#removeQuestionButton').addClass('d-none');
+    db.cancelQuestionEdit();
 }
 
 /* #endregion */
 
-
-
-
-
-
-
-
-
+String.prototype.hashCode = function () {
+    var hash = 0, i, chr;
+    if (this.length === 0) return hash;
+    for (i = 0; i < this.length; i++) {
+        chr = this.charCodeAt(i);
+        hash = ((hash << 5) - hash) + chr;
+        hash |= 0; // Convert to 32bit integer
+    }
+    return hash;
+};

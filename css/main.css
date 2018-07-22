@@ -5,3 +5,7 @@
 #newQuestionForm textarea{
     resize: none;
 }
+
+#loginButton{
+    margin-top:10px;
+}

@@ -1,18 +1,30 @@
-// import Category from './modules/category.js';
-// import Quizz from './modules/quizz.js';
-// import Question from './modules/question.js';
-
 var data;
 var categoriesList;
 var quizzesList;
 
-var nextCategoryID;
 var questionsList = [];
-var editedQuestion;
+
+var editedCategory;
 var editedQuizz;
+var editedQuestion;
+
+export function checkLogin(username,password){
+    return username == data.username && password == data.password;
+}
+
+export function cancelCategoryEdit() {
+    editedCategory = undefined;
+}
+export function cancelQuizzEdit() {
+    editedQuizz = undefined;
+    editedQuestion = undefined;
+    questionsList = [];
+}
+export function cancelQuestionEdit() {
+    editedQuestion = undefined;
+}
 
 function Save() {
-    //console.log(data);
     $.ajax({
         url: "../ajax/save.php",
         data: { data },
@@ -27,55 +39,50 @@ export function Load(loadCallback) {
         quizzesList = data.quizzes;
 
         loadCallback();
-
-        var categories = Object.keys(categoriesList);
-        nextCategoryID = parseInt(categories[categories.length - 1]) + 1;
     });
 }
 
 /* #region Category */
 
-export function createCategory(name) {
-    categoriesList[nextCategoryID++] = { name };
-    Save();
-}
 export function getCategories() {
     return categoriesList;
 }
-export function getQuizzes() {
-    return quizzesList;
-}
-
-export function updateCategory(id, newName) {
-    categoriesList[id].name = newName;
+export function saveCategory(name) {
+    var categoryID = editedCategory !== undefined ? editedCategory : getNextCategoryID();
+    categoriesList[categoryID] = { name };
     Save();
-}
 
+    editedCategory = undefined;
+}
+export function editCategory(categoryID) {
+    editedCategory = categoryID;
+    return categoriesList[categoryID];
+}
 export function deleteCategory(id) {
     delete categoriesList[id];
     Save();
 }
 
-export function categoryExists(categoryID) {
-    return this.categories[categoryID] === undefined ? false : true;
-}
-
 /* #endregion */
 /* #region Quizz */
+
+export function getQuizzes() {
+    return quizzesList;
+}
 
 export function saveQuizz(categoryID, name) {
     var quizzID = editedQuizz !== undefined ? editedQuizz : getNextQuizzID();
 
     quizzesList[quizzID] = { name, categoryID, questions: {} };
-    // questionsList.forEach((question, index) => {
-    //     categoriesList[categoryID].quizzes[quizzID].questions[index + 1] = question;
-    // });
+    questionsList.forEach((question, index) => {
+        quizzesList[quizzID].questions[index + 1] = question;
+    });
     questionsList = [];
     editedQuizz = undefined;
     Save();
 }
 
-export function editQuizz(quizzID){
+export function editQuizz(quizzID) {
     editedQuizz = quizzID;
     return quizzesList[quizzID];
 }
@@ -95,12 +102,12 @@ export function saveQuestion(question) {
     else {
         questionsList.push(question);
     }
+    editedQuestion = undefined;
 }
 export function loadQuestions(questions, callback) {
     $.each(questions, (index, value) => {
         questionsList.push(value);
     });
-    //console.log(questionsList);
     callback();
 }
 export function editQuestion(index) {
@@ -119,12 +126,18 @@ export function resetQuestions() {
 
 function getNextQuizzID() {
     let quizzes = Object.keys(quizzesList);
-
     if (!quizzes.length) {
         return 1;
     }
-
     return parseInt(quizzes[quizzes.length - 1]) + 1;
+}
+
+function getNextCategoryID() {
+    var categories = Object.keys(categoriesList);
+    if (!categories.length) {
+        return 1;
+    }
+    return parseInt(categories[categories.length - 1]) + 1;
 }
 
 /* #endregion */
