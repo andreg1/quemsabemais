@@ -38,8 +38,12 @@ $(document).ready(function () {
     $('#saveQuestionButton').click(() => {
         saveQuestion();
     });
-    $('#addQuestion, #cancelQuestionButton').click(() => {
-        toggleQuestionView();
+    $('#addQuestion').click(() => {
+        clearQuestionView();
+        showQuestionView();
+    });
+    $('#cancelQuestionButton').click(() => {
+        hideQuestionView();
     });
     $('#cancelQuizzButton').click(() => {
         //reset modal state
@@ -53,6 +57,12 @@ $(document).ready(function () {
     $("#questionsList").on("click", "button.list-group-item-action", function(){
         $('#questionsList .list-group-item-action.active').removeClass('active');
         $(this).addClass('active');
+        var index = $('#questionsList .list-group-item-action').index($(this));
+        editQuestion(index);
+    });
+    $('#removeQuestionButton').click(()=>{
+        removeQuestion()
+        hideQuestionView();
     });
     
 });
@@ -186,8 +196,29 @@ function saveQuestion() {
 
     db.saveQuestion(_question);
     loadQuestionsList();
-    toggleQuestionView();
+    hideQuestionView();
 }
+
+function editQuestion(index){
+    var data = db.editQuestion(index);
+    $('#questionForm input[name=question]').val(data.question);
+    $('#questionForm textarea').val(data.explanation);
+    for(var index in data.options){
+        $(`#questionForm input[name=option${index}]`).val(data.options[index]);
+    }
+    $(`#questionForm input[type=radio][value=${data.options.correctAnswer}]`).prop("checked","true");
+    showQuestionView();
+    $('#removeQuestionButton').removeClass('d-none');
+}
+
+function removeQuestion(){
+    var index = $('#questionsList .list-group-item-action').index($('#questionsList .list-group-item-action.active'));
+    db.removeQuestion(index);
+    hideQuestionView();
+    loadQuestionsList();
+}
+
+
 
 function loadQuestionsList() {
     $("#questionsList button").remove();
@@ -271,13 +302,21 @@ function softResetQuizzModal(){
 
 //general use
 
-function toggleQuestionView() {
-    $('#addQuestion').toggle();
-    $('#questionForm').toggleClass('d-none');
-
-    //clear fields
+function clearQuestionView(){
     $('#questionForm input[type=text], #questionForm textarea').val('');
     $('#questionForm input[type=radio]').prop('checked', false);
+}
+
+function showQuestionView() {
+    //clear fields
+    $('#addQuestion').hide();
+    $('#questionForm').removeClass('d-none');
+}
+
+function hideQuestionView() {
+    $('#addQuestion').show();
+    $('#questionForm').addClass('d-none');
+    $('#removeQuestionButton').addClass('d-none');
 }
 
 /* #endregion */

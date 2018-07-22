@@ -6,6 +6,7 @@ var data;
 var categoriesList;
 var nextCategoryID;
 var questionsList = [];
+var editedQuestion;
 
 function Save() {
     //console.log(data);
@@ -79,9 +80,6 @@ export function updateQuizz(quizzID, newCategoryID, newName) {
         saveQuizz(quizzID, oldCategoryID, newName);
     }
     else{
-        console.log(categoriesList);
-        console.log(oldCategoryID);
-        console.log(quizzID);
         delete categoriesList[oldCategoryID].quizzes[quizzID];
         saveQuizz(0, newCategoryID, newName);
     }
@@ -96,7 +94,12 @@ export function getCategoryByID(categoryID) {
 }
 
 export function saveQuestion(question) {
-    questionsList.push(question);
+    if(editedQuestion !== undefined){
+        questionsList[editedQuestion] = question;
+    }
+    else{
+        questionsList.push(question);
+    }
 }
 export function loadQuestions(questions, callback) {
     $.each(questions, (index, value) => {
@@ -104,6 +107,13 @@ export function loadQuestions(questions, callback) {
     });
     //console.log(questionsList);
     callback();
+}
+export function editQuestion(index){
+    editedQuestion = index;
+    return questionsList[index];
+}
+export function removeQuestion(index){
+    questionsList.splice(index,1);
 }
 export function getQuestions() {
     return questionsList;
@@ -129,7 +139,3 @@ function getNextQuizzID(categoryID) {
 }
 
 /* #endregion */
-
-
-
-
