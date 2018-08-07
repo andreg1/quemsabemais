@@ -3,7 +3,7 @@ import * as db from './database.js';
 $(document).ready(function () {
     db.Load(loadDashboard);
 
-    $('#loginForm').submit((event)=>{
+    $('#loginForm').submit((event) => {
         event.preventDefault();
         Login();
     })
@@ -23,6 +23,8 @@ $(document).ready(function () {
     $("#tblCategories").on("click", "button.deleteButton", (event) => {
         deleteCategory($(event.target).parents("tr"));
     });
+
+
 
 
     $("#newQuizz").click(() => {
@@ -57,6 +59,9 @@ $(document).ready(function () {
         removeQuestion()
         hideQuestionView();
     });
+    $('input[type=file][name=answerImage]').change(function () {
+        previewImage(this);
+    });
 
 
     $("#questionsList").on("click", "button.list-group-item-action", function () {
@@ -73,10 +78,10 @@ $(document).ready(function () {
     });
 });
 
-function Login(){
+function Login() {
     var username = $('#loginSection input[name=username]').val();
     var password = $('#loginSection input[name=password]').val();
-    if(db.checkLogin(username,password.hashCode())){
+    if (db.checkLogin(username, password.hashCode())) {
         $('#loginSection').hide();
         $('#backOffice').show();
     }
@@ -195,6 +200,17 @@ function saveQuestion() {
     reader.onload = () => {
         db.saveQuestion(_question, file.name, file, hideQuestionView);
         loadQuestionsList();
+    }
+}
+function previewImage(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#answerImagePreview').attr("src", e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
     }
 }
 

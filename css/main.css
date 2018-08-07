@@ -115,3 +115,8 @@ body .container-fluid{
 #loginSection, #loginSection > .row, #backOffice{
     height:100%;
 }
+
+#answerImagePreview{
+    display:block;
+    width:200px;
+}

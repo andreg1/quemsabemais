@@ -61,7 +61,7 @@ export function editCategory(categoryID) {
 }
 export function deleteCategory(id) {
     delete categoriesList[id];
-    Save();
+    //Save();
 }
 
 /* #endregion */
@@ -90,6 +90,7 @@ export function editQuizz(quizzID) {
 
 export function deleteQuizz(quizzID) {
     delete quizzesList[quizzID];
+    //Save();
 }
 
 export function getCategoryByID(categoryID) {
