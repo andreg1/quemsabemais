@@ -8,7 +8,7 @@ var editedCategory;
 var editedQuizz;
 var editedQuestion;
 
-export function checkLogin(username,password){
+export function checkLogin(username, password) {
     return username == data.username && password == data.password;
 }
 
@@ -30,6 +30,7 @@ function Save() {
         data: { data },
         method: "POST"
     });
+    console.log(data);
 }
 
 export function Load(loadCallback) {
@@ -95,15 +96,39 @@ export function getCategoryByID(categoryID) {
     return categoriesList[categoryID];
 }
 
-export function saveQuestion(question) {
-    if (editedQuestion !== undefined) {
-        questionsList[editedQuestion] = question;
+export function saveQuestion(question, imageName, image, hideQuestionView) {
+    if (image !== undefined && imageName !== undefined) {
+        var formData = new FormData();
+        //formData.append("imageName", imageName);
+        formData.append("image", image);
+
+        $.ajax({
+            url: "../ajax/saveImage.php",
+            data: formData,
+            method: "POST",
+            processData: false,
+            contentType: false
+        }).done((imagePath) => {
+            //imagePath = JSON.parse(imagePath);
+            //console.log(imagePath)
+            question.correctAnswerImage = { imageName, imagePath }
+        }).always(() => {
+            if (editedQuestion !== undefined) {
+                questionsList[editedQuestion] = question;
+            }
+            else {
+                questionsList.push(question);
+            }
+            editedQuestion = undefined;
+            hideQuestionView();
+        });
     }
-    else {
-        questionsList.push(question);
-    }
-    editedQuestion = undefined;
 }
+
+// export function saveImage(event){
+//     var result = event.target.result;
+//     var fileName = document.getElementById('fileBox').files[0].name;
+// }
 export function loadQuestions(questions, callback) {
     $.each(questions, (index, value) => {
         questionsList.push(value);

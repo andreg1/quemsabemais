@@ -2,6 +2,7 @@
 
 html, body{
     height:100%;
+    background-color: #cfcfd1;
 }
 .underline{
     text-decoration: underline;
@@ -10,7 +11,6 @@ html, body{
 /* front-end */
 
 body .container-fluid{
-    background-color: #cfcfd1;
 }
 
 .header::before{
@@ -112,6 +112,6 @@ body .container-fluid{
     margin-top:10px;
 }
 
-#loginSection, #loginSection > .row{
+#loginSection, #loginSection > .row, #backOffice{
     height:100%;
 }

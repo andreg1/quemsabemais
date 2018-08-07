@@ -3,7 +3,8 @@ import * as db from './database.js';
 $(document).ready(function () {
     db.Load(loadDashboard);
 
-    $('#loginButton').click(()=>{
+    $('#loginForm').submit((event)=>{
+        event.preventDefault();
         Login();
     })
 
@@ -183,14 +184,20 @@ function saveQuestion() {
         var checked = $row.find("input[type=radio]").prop("checked");
         var optionID = index + 1;
         if (checked) {
-            _question.options.correctAnswer = optionID;
+            _question.correctAnswer = optionID;
         }
         _question.options[optionID] = option;
     });
-    db.saveQuestion(_question);
-    loadQuestionsList();
-    hideQuestionView();
+
+    var file = $('#quizzForm input[name=answerImage]')[0].files[0];
+    var reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+        db.saveQuestion(_question, file.name, file, hideQuestionView);
+        loadQuestionsList();
+    }
 }
+
 function editQuestion(index) {
     var data = db.editQuestion(index);
     $('#questionForm input[name=question]').val(data.question);
@@ -198,7 +205,7 @@ function editQuestion(index) {
     for (var index in data.options) {
         $(`#questionForm input[name=option${index}]`).val(data.options[index]);
     }
-    $(`#questionForm input[type=radio][value=${data.options.correctAnswer}]`).prop("checked", "true");
+    $(`#questionForm input[type=radio][value=${data.correctAnswer}]`).prop("checked", "true");
     showQuestionView();
     $('#removeQuestionButton').removeClass('d-none');
 }

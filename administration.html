@@ -17,10 +17,10 @@
     <div id="loginSection" class="container-fluid">
         <div class="row justify-content-center align-items-center">
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 jumbotron">
-                <form>
-                    <input type="text" name="username" class="form-control" placeholder="Nome de utilizador">
-                    <input type="password" name="password" class="form-control" placeholder="Password">
-                    <button type="button" id="loginButton" class="btn btn-primary form-control">Login</button>
+                <form id="loginForm">
+                    <input type="text" name="username" class="form-control" placeholder="Nome de utilizador" value="quemsabemais" autofocus>
+                    <input type="password" name="password" class="form-control" placeholder="Password" value="Password1!">
+                    <button type="submit" id="loginButton" class="btn btn-primary form-control">Login</button>
                 </form>
             </div>
         </div>
@@ -169,6 +169,10 @@
                                 <div class="form-group">
                                     <textarea name="answerExplanation" class="form-control" placeholder="Explicação"></textarea>
                                 </div>
+                                <div class="form-group">
+                                    <input type="file" name="answerImage">
+                                </div>
+
                                 <button type="button" id="cancelQuestionButton" class="btn btn-outline-secondary">Cancelar</button>
                                 <button type="button" id="removeQuestionButton" class="btn btn-outline-danger d-none">Remover</button>
                                 <button type="button" id="saveQuestionButton" class="btn btn-outline-primary">Gravar Questão</button>
