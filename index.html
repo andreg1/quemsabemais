@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <script src="js/main.js"></script>
+    <script src="js/vendors/jquery-3.3.1.min.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -53,8 +54,34 @@
         <div class="row justify-content-center">
 
             <div class="col-10 content">
+                <div class="categoriesSection">
+                    <div class="sectionContent">
+                        
+                    </div>
+                </div>
+                <div class="quizzSection d-none">
+                    <div class="sectionContent">
+
+                    </div>
+                    <button id='playButton'>Jogar</button>
+                    <button id='backButton'>Voltar</button>
+                </div>
+                <div class="playSection d-none">
+                    <div class="playersSectionContent row">
+                        <div class="col-5">
+
+                            <input type="text" name="playerName" placeholder="Nome">
+                            <button id="addPlayer">Adicionar Jogador</button>
+
+                        </div>
+                        <div class="col-5">
+                            <h4>Lista de Jogadores</h4>
+                            <div class="playersList"></div>
+                        </div>
 
 
+                    </div>
+                </div>
             </div>
 
         </div>

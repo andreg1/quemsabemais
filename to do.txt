@@ -1,0 +1,5 @@
+séries variáveis nrperguntas/3/nrjogadores
+
+numero de jogador mais do que uma letra
+
+jogo escondido até ser aprovado

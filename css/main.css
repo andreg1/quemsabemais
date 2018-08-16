@@ -8,10 +8,12 @@ html, body{
     text-decoration: underline;
 }
 
+.quizzCTA{
+    cursor:pointer;
+}
+
 /* front-end */
 
-body .container-fluid{
-}
 
 .header::before{
     content:"";
@@ -19,6 +21,7 @@ body .container-fluid{
     border-right: 275px solid transparent;
     position:absolute;
     z-index:1;
+    pointer-events: none;
 }
 
 .header__logo{
