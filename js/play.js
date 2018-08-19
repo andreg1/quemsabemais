@@ -45,10 +45,10 @@ class quizzEngine {
 
         let questionsList = Object.values(this.quizz.questions);
 
-        let questionsPerSerie = 1;
-        let numberOfSeries = 2;
-        //let questionsPerSerie = 3;
-        //let numberOfSeries = Math.floor(questionsList.length / this.players.length / questionsPerSerie) * this.players.length;
+        // let questionsPerSerie = 1;
+        // let numberOfSeries = 2;
+        let questionsPerSerie = 3;
+        let numberOfSeries = Math.floor(questionsList.length / this.players.length / questionsPerSerie) * this.players.length;
 
         this.series = [];
         this.scores = {};
@@ -195,7 +195,7 @@ class quizzEngine {
         $('.scoreSection').removeClass('d-none');
     }
     startTimer() {
-        this.currentTime = 5;
+        this.currentTime = 30;
         this.updateTimer();
         this.timer = setInterval(function () {
             engine.tickTimer();
