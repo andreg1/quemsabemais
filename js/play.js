@@ -32,8 +32,6 @@ function getPlayers() {
     return playersList;
 }
 
-
-
 /* ----------------------------------------------------- */
 
 class quizzEngine {
@@ -47,30 +45,41 @@ class quizzEngine {
 
         // let questionsPerSerie = 1;
         // let numberOfSeries = 2;
-        let questionsPerSerie = 3;
-        let numberOfSeries = Math.floor(questionsList.length / this.players.length / questionsPerSerie) * this.players.length;
+        this.questionsPerSerie = 3;
+        this.numberOfSeries = Math.floor(questionsList.length / this.players.length / this.questionsPerSerie) * this.players.length;
 
-        this.series = [];
-        this.scores = {};
+        this.leaderboard = {};
 
-        for (let i = 0; i < numberOfSeries; i++) {
-            this.series.push(questionsList.splice(0, questionsPerSerie))
-        }
+        this.turns = [];
+        this.currentTurn = 0;
+        this.currentQuestionIndex = 0;
 
         for (let player of this.players) {
-            this.scores[player] = 0;
+            let turn = {};
+            turn.player = player;
+            for (let i = 0; i < this.numberOfSeries / 2; i++) {
+                turn.questions = questionsList.splice(0, this.questionsPerSerie);
+                turn.currentQuestionIndex = 0;
+            }
+            this.turns.push(turn);
+            this.leaderboard[player] = { score: 0, totalTime: 0 };
         }
+
+        // for (let i = 0; i < this.numberOfSeries; i++) {
+        //     this.series.push(questionsList.splice(0, this.questionsPerSerie))
+        // }
+        console.log(this.turns);
 
 
         this.timer = null;
 
-        this.nextQuestion();
+        this.startQuizz();
 
         // this.loadQuestion();
         this.loadScores();
 
-        $('.playersSectionContent').addClass('d-none');
-        $('.quizzSectionContent').removeClass('d-none');
+        $('.getPlayersSections').addClass('d-none');
+        $('.playSection').removeClass('d-none');
     }
     debug() {
         //console.log(this.series);
@@ -78,33 +87,82 @@ class quizzEngine {
 
         console.log(this.currentPlayer);
         //console.log(this.currentSeries);
-        console.log(this.currentQuestion);
+        console.log(this.currentQuestionIndex);
     }
     debugTimer() {
         console.log();
     }
-    nextQuestion() {
-        if (this.currentSeries === undefined || !this.currentSeries.length) {
-            if (this.nextSeries() == "gameover") return;
-        }
-        this.currentQuestion = this.currentSeries.shift();
-
-
+    startQuizz() {
+        this.turns[this.currentTurn].currentQuestionIndex = this.currentQuestionIndex;
         this.loadQuestion();
-        this.startTimer();
+    }
+    nextQuestion() {
+        // if (this.currentSeries === undefined || !this.currentSeries.length) {
+        //     if (this.nextSeries() == "gameover") return;
+        // }
+        // this.currentQuestionIndex = this.currentSeries.shift();
+        if (this.getCurrentSeries().length == this.currentQuestionIndex + 1) {
+            return this.nextSeries();
+        }
+
+        this.currentQuestionIndex++;
+        this.turns[this.currentTurn].currentQuestionIndex = this.currentQuestionIndex;
+        this.loadQuestion();
         //this.debug();
     }
-    nextPlayer() {
-        this.currentPlayer = this.players.shift();
-        this.players.push(this.currentPlayer);
-    }
+    // nextTurn() {
+    //     this.currentTurn++;
+    // }
     nextSeries() {
-        if (!this.series.length) {
-            this.gameOver();
-            return "gameover";
+        if (this.turns.length == this.currentTurn + 1) {
+            return this.gameOver();
         }
-        this.nextPlayer();
-        this.currentSeries = this.series.shift();
+        this.currentTurn++;
+        this.currentQuestionIndex = 0;
+        this.loadQuestion();
+
+        //this.nextPlayer();
+        //this.currentSeries = this.series.shift();
+    }
+    loadGameInfo() {
+        let panel = $('.gameInfo');
+        panel.html('');
+
+        //console.log(this.currentQuestionIndex);
+
+        let questionsPerSerie = this.questionsPerSerie;
+        let currentPlayer = this.getCurrentPlayer();
+        let points = this.getCurrentQuestionValue();
+        //console.log(this.getCurrentQuestionValue());
+
+        let html = `
+        <div class="playerPanel">`;
+
+        $.each(this.turns, function (index, turn) {
+            html += `<div class="${turn.player == currentPlayer ? 'currentPlayer' : ''}"><label class="questionsAnswered">${turn.currentQuestionIndex + 1}/${questionsPerSerie}</label><label class="playerName">${turn.player}</label></div>`;
+        });
+
+        html += `</div>
+        <div class="questionScore"><label>Vale ${points} ${points > 1 ? 'pontos' : 'ponto'}</label></div>
+        <div class="timerSection"></div>
+        <div class="seriesInfo"><label>Série: ${this.currentTurn + 1} de ${this.turns.length}</label></div>`;
+        panel.append(html);
+
+    }
+    getCurrentQuestion() {
+        return this.turns[this.currentTurn].questions[this.currentQuestionIndex];
+    }
+    getCurrentSeries() {
+        return this.turns[this.currentTurn].questions;
+    }
+    getCurrentTurn() {
+        return this.turns[this.currentTurn];
+    }
+    getCurrentQuestionValue() {
+        return this.getCurrentSeries().indexOf(this.getCurrentQuestion()) + 1;
+    }
+    getCurrentPlayer() {
+        return this.getCurrentTurn().player;
     }
 
     loadQuestion() {
@@ -113,20 +171,27 @@ class quizzEngine {
         panel.html('');
         explanationPanel.html('');
 
+        this.loadGameInfo();
+
         let html = `
-            <div class="timerSection"></div>
-            <h2>${this.currentQuestion.question}</h2>
-            <div class="list-group">`;
-        $.each(this.currentQuestion.options, function (index, question) {
-            html += `<button type="button" class="list-group-item list-group-item-action answerCTA">${index}. ${question}</button>`;
+            
+            <h2 class="question">${this.getCurrentQuestion().question}</h2>
+            <div style="display:flex;">
+                <div class="list-group">`;
+        $.each(this.getCurrentQuestion().options, function (index, question) {
+            html += `<button type="button" class="list-group-item list-group-item-action answerCTA">${index} - ${question}</button>`;
         });
-        html += `</div>`;
+        html += `</div>
+                <img src="${this.getCurrentQuestion().correctAnswerImage.imagePath}" style="flex:1;">
+            </div>
+        
+        `;
 
         let explanationHtml = `
-            <h2>${this.currentQuestion.question}</h2>
+            <h2 class="question">${this.getCurrentQuestion().question}</h2>
             <div class="row">
-                <div class="col">${this.currentQuestion.explanation}</div>
-                <img src="${this.currentQuestion.correctAnswerImage.imagePath}">
+                <div class="col">${this.getCurrentQuestion().explanation}</div>
+                <img src="${this.getCurrentQuestion().correctAnswerImage.imagePath}" style="padding-right:15px;">
             </div>
             
             `;
@@ -140,21 +205,27 @@ class quizzEngine {
         panel.append(html);
         explanationPanel.append(explanationHtml);
 
+        this.startTimer();
+
         $('.answerCTA').click(function () { engine.confirmAnswer($(this)) });
     }
     loadScores() {
         let panel = $('.scorePanel');
-        let html = '<h3>Scores</h3>';
-        $.each(this.scores, function (player, score) {
-            html += `<label class="form-control">${player} : ${score}</label>`;
+        let html = '';
+        let currentPlayer = this.getCurrentPlayer();
+        $.each(this.leaderboard, function (player, info) {
+            html += `<div class="${player == currentPlayer ? "currentPlayer" : ""}">
+                        <label>${player}</label>
+                        <label class="playerScore">${info.score} pontos</label>
+                    </div>`;
         });
         panel.html(html);
     }
     loadScoresSection() {
         let panel = $('.scoreSectionContent');
         let html = '<h2>Scores</h2>';
-        $.each(this.scores, function (player, score) {
-            html += `<label class="form-control">${player} : ${score}</label>`;
+        $.each(this.leaderboard, function (player, info) {
+            html += `<label class="form-control">${player} : ${info.score} (${(info.totalTime/1000).toFixed(2)}s)</label>`;
         });
         panel.html(html);
     }
@@ -162,26 +233,37 @@ class quizzEngine {
         $('.answerCTA').off('click');
         this.stopTimer();
 
-        $('.answerCTA').eq(this.currentQuestion.correctAnswer).addClass('list-group-item-success');
-        $('.answerCTA').not($('.answerCTA').eq(this.currentQuestion.correctAnswer)).addClass('list-group-item-danger');
-        
-        let points = 3 - this.currentSeries.length;
 
-        if(selectedOption == null){
-            this.updateScore(-points);
+        //$('.answerCTA').eq(this.currentQuestionIndex.correctAnswer).addClass('list-group-item-success');
+        //$('.answerCTA').not($('.answerCTA').eq(this.currentQuestionIndex.correctAnswer)).addClass('list-group-item-danger');
+
+        let selectedIndex = $('.answerCTA').index(selectedOption);
+        let selectedAnswer = selectedIndex + 1;
+
+        let points = this.getCurrentQuestionValue();
+        var elapsedTime = Date.now() - this.startTime;
+        console.log(selectedAnswer);
+        console.log(this.getCurrentQuestion().correctAnswer);
+
+
+
+
+        if (selectedOption == null) {
+            this.updateScore(-points, elapsedTime);
         }
-        else{
+        else {
             selectedOption.addClass('active');
-            this.updateScore(selectedOption.hasClass('list-group-item-danger') ? -points : points);
+            this.updateScore(selectedAnswer == this.getCurrentQuestion().correctAnswer ? points : -points, elapsedTime);
         }
 
         setTimeout(this.showExplanation, 1000);
 
-        //selectedOption.addClass('list-group-item-' + (selectedAnswer == this.currentQuestion.correctAnswer ? 'success' : 'danger' + ' active'));
+        //selectedOption.addClass('list-group-item-' + (selectedAnswer == this.currentQuestionIndex.correctAnswer ? 'success' : 'danger' + ' active'));
 
     }
-    updateScore(points) {
-        this.scores[this.currentPlayer] = this.scores[this.currentPlayer] + points;
+    updateScore(points, elapsedTime) {
+        this.leaderboard[this.getCurrentPlayer()].score += points;
+        this.leaderboard[this.getCurrentPlayer()].totalTime += elapsedTime;
         this.loadScores();
     }
     showExplanation() {
@@ -192,28 +274,29 @@ class quizzEngine {
     gameOver() {
         this.loadScoresSection();
         $('.playSection').addClass('d-none');
-        $('.scoreSection').removeClass('d-none');
+        $('.gameOver').removeClass('d-none');
     }
     startTimer() {
+        this.startTime = Date.now();
         this.currentTime = 30;
         this.updateTimer();
         this.timer = setInterval(function () {
             engine.tickTimer();
         }, 1000);
     }
-    tickTimer(){
+    tickTimer() {
         engine.currentTime--;
         engine.updateTimer();
-        if(engine.currentTime == 0){
+        if (engine.currentTime == 0) {
             engine.confirmAnswer(null);
         }
     }
-    stopTimer(){
+    stopTimer() {
         clearInterval(this.timer);
     }
     updateTimer() {
         let panel = $('.timerSection');
-        panel.html(`<label class="form-control">${this.currentTime}</label>`);
+        panel.html(`<label>${this.currentTime}s</label>`);
     }
 }
 
@@ -242,9 +325,8 @@ $('#nextQuestionButton').click(() => {
 });
 
 $('#playAgainButton').click(() => {
-    engine = new quizzEngine();
-    $('.playSection').removeClass('d-none');
-    $('.scoreSection').addClass('d-none');
+    $('.getPlayersSections').removeClass('d-none');
+    $('.gameOver').addClass('d-none');
 });
 
 
@@ -260,9 +342,9 @@ function loadSelectedQuizz() {
     }
 
     //to remove
-    addPlayerDB("player1", loadPlayerList);
-    addPlayerDB("player2", loadPlayerList);
-    $('#playQuizz').click();
+    // addPlayerDB("player1", loadPlayerList);
+    // addPlayerDB("player2", loadPlayerList);
+    // $('#playQuizz').click();
 }
 
 function addPlayer() {
@@ -279,7 +361,7 @@ function loadPlayerList() {
     }
     $('.playersList').html(html);
 
-    if (playersList.size >= 2) {
+    if (playersList.length >= 2) {
         $('#playMenu').removeClass('d-none');
     }
     else {

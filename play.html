@@ -16,81 +16,64 @@
     <div class="container-fluid">
         <div class="row justify-content-between header">
 
-            <div class="header__logo">
-                logo here
-            </div>
-
-            <div class="header__text">
-                <h5>O Jogo do conhecimento e da aprendizagem</h5>
+            <div class="header__logo offset-1">
+                <a href="/"><img src="images/logo.png" alt=""></a>
             </div>
 
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div class="navbar">
-                    <ul class="navbar__menu">
-                        <li class="active">
-                            <a href="index.html">Jogar</a>
-                        </li>
-                        <li>
-                            <a href="o-que-e.html">O que é</a>
-                        </li>
-                        <li>
-                            <a href="como-jogar.html">Como jogar</a>
-                        </li>
-                        <li>
-                            <a href="jogo-ao-vivo.html">Jogo «ao vivo»</a>
-                        </li>
-                        <li>
-                            <a href="contactos.html">Contactos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row justify-content-center">
+        <div class="row justify-content-center getPlayersSections">
 
             <div class="col-10 content">
-                <div class="playSection">
-                    <div class="playersSectionContent">
-                        <div class="row">
-                            <div class="col-5">
-                                <form id="addPlayerForm">
-                                    <input type="text" name="playerName" placeholder="Nome" class="form-control" required minlength="2">
-                                    <button class="btn btn-primary btn-block">Adicionar Jogador</button>
-                                </form>
+                <div class="row justify-content-center" style="margin-bottom: 10px;">
+                    <div class="col-3">
+                        <form id="addPlayerForm">
+                            <input type="text" name="playerName" placeholder="Nome" class="form-control" required
+                                minlength="2">
+                            <button class="btn btn-primary btn-block">Adicionar Jogador</button>
+                        </form>
 
-                            </div>
-                            <div class="col-5">
-                                <h4>Lista de Jogadores</h4>
-                                <div class="playersList"></div>
-                            </div>
-                        </div>
-                        <div id="playMenu" class="row d-none">
-                            <div class="col-10">
-                                <button id="playQuizz" class="btn btn-primary btn-block">Jogar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quizzSectionContent d-none">
-                        <div class="questionPanel">
-                            <div class="questionContent"></div>
-                        </div>
-                        <div class="explanationPanel" style="display:none">
-                            <div class="explanationContent"></div>
-                            <button id="nextQuestionButton" class="btn btn-primary">Próxima pergunta</button>
-                        </div>
-                        <div class="scorePanel">
-
-                        </div>
                     </div>
                 </div>
-                <div class="scoreSection d-none">
-                    <div class="scoreSectionContent"></div>
-                    <button id="playAgainButton" class="btn btn-primary">Jogar de novo</button>
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <h4>Lista de Jogadores</h4>
+                        <div class="playersList"></div>
+                    </div>
+                </div>
+                <div id="playMenu" class="row justify-content-center d-none">
+                    <div class="col-3">
+                        <button id="playQuizz" class="btn btn-primary btn-block">Jogar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center d-none playSection">
+            <div class="col-8 content">
+                <div class="gameInfo"></div>
+                <div class="quizzSectionContent">
+                    <div class="questionPanel">
+                        <div class="questionContent"></div>
+                    </div>
+                    <div class="explanationPanel" style="display:none">
+                        <div class="explanationContent"></div>
+                        <button id="nextQuestionButton" class="btn btn-primary">Próxima pergunta</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2 scorePanel">
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center gameOver d-none">
+            <div class="col-10 content">
+                <div class="scoreSection row">
+                    <div class="col-5 mx-auto">
+                        <div class="scoreSectionContent"></div>
+                        <button id="playAgainButton" class="btn btn-primary">Jogar de novo</button>
+                    </div>
                 </div>
             </div>
 
