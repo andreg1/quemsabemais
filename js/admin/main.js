@@ -198,8 +198,7 @@ function saveQuestion() {
     var reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => {
-        db.saveQuestion(_question, file.name, file, hideQuestionView);
-        loadQuestionsList();
+        db.saveQuestion(_question, file.name, file, hideQuestionView, loadQuestionsList);
     }
 }
 function previewImage(input) {

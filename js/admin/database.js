@@ -30,13 +30,14 @@ function Save() {
         data: { data },
         method: "POST"
     });
-    console.log(data);
 }
 
 export function Load(loadCallback) {
     $.getJSON("../database.json", fileData => {
         data = fileData;
+        if(data.categories === undefined) data.categories = {};
         categoriesList = data.categories;
+        if(data.quizzes === undefined) data.quizzes = {};
         quizzesList = data.quizzes;
 
         loadCallback();
@@ -97,7 +98,7 @@ export function getCategoryByID(categoryID) {
     return categoriesList[categoryID];
 }
 
-export function saveQuestion(question, imageName, image, hideQuestionView) {
+export function saveQuestion(question, imageName, image, hideQuestionView, updateQuestions) {
     if (image !== undefined && imageName !== undefined) {
         var formData = new FormData();
         //formData.append("imageName", imageName);
@@ -122,6 +123,7 @@ export function saveQuestion(question, imageName, image, hideQuestionView) {
             }
             editedQuestion = undefined;
             hideQuestionView();
+            updateQuestions();
         });
     }
 }
