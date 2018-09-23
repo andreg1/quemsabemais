@@ -86,7 +86,7 @@ input{
 }
 
 
-/* play */}
+/* play */
 
 h2.question{
     margin-bottom: 20px;
@@ -179,9 +179,6 @@ h2.question{
     font-size:14px;
 }
 
-.scorePanel{
-
-}
 .scorePanel div{
     background:#333333;
     padding: 10px 20px;
