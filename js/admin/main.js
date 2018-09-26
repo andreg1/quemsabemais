@@ -253,8 +253,9 @@ function loadQuestionsList() {
 //modal interactions
 function hardResetQuizzModal() {
     softResetQuizzModal();
-    $('#quizzForm input[type=text], #quizzForm textarea').val('');
     $('#questionsList').html('<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>');
+    $('#quizzForm input[name=quizzName]').val('');
+    clearQuestionView();
 }
 function softResetQuizzModal() {
     $('#addQuestion').show();
@@ -265,8 +266,10 @@ function softResetQuizzModal() {
 
 //general use
 function clearQuestionView() {
-    $('#questionForm input[type=text], #questionForm textarea').val('');
-    $('#questionForm input[type=radio]').prop('checked', false);
+    $('#questionForm input:text, #quizzForm input:file, #quizzForm textarea').val('');
+    $('#questionForm input:radio').prop('checked', false);
+    $('#questionForm #answerImagePreview').attr('src','');
+
 }
 function showQuestionView() {
     //clear fields
