@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quem Sabe Mais Sobre...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <script src="js/vendors/jquery-3.3.1.min.js" defer></script>
+    <script src="js/play.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+
+            <div class="header__logo col-auto mx-auto mx-md-5">
+                <a href="/JOGOS/"><img src="images/logo.png" alt=""></a>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center getPlayersSections">
+
+            <div class="col-11 col-lg-10 content">
+                <div class="row justify-content-center" style="margin-bottom: 10px;">
+                    <div class="col-6 col-lg-4">
+                        <form id="addPlayerForm">
+                            <input type="text" name="playerName" placeholder="Nome" class="form-control" required
+                                minlength="2">
+                            <button class="btn btn-primary btn-block">Adicionar Jogador</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-lg-4">
+                        <h4>Lista de Jogadores</h4>
+                        <div class="playersList"></div>
+                    </div>
+                </div>
+                <div id="playMenu" class="row justify-content-center d-none">
+                    <div class="col-3">
+                        <button id="playQuizz" class="btn btn-primary btn-block">Jogar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center d-none playSection">
+            <div class="col-11 col-lg-8 content">
+                <div class="gameInfo"></div>
+                <div class="quizzSectionContent">
+                    <div class="questionPanel">
+                        <div class="questionContent"></div>
+                    </div>
+                    <div class="explanationPanel" style="display:none">
+                        <div class="explanationContent"></div>
+                        <button id="nextQuestionButton" class="btn btn-primary">Próxima pergunta</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2 scorePanel">
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center gameOver d-none">
+            <div class="col-11 col-lg-8 content">
+                <div class="scoreSection row justify-content-center">
+                    <div class="col-6 col-lg-4">
+                        <div class="scoreSectionContent"></div>
+                        <button id="playAgainButton" class="btn btn-primary">Jogar de novo</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row bannerPubContainer">
+
+            <div class="col-11 col-md-auto mx-auto">
+                    <a target="_blank">
+                        <img id="bannerPub">
+                    </a>
+    
+                </div>
+    
+            </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.bannerPubContainer > div {
+    padding:0;
+}
+
+@media(max-width: 768px) {/* -md- */
+    #bannerPub {
+        width:100%;
+        height:auto;
+    }
+    .playerPanel div{
+        width:90px;
+        margin-right: 10px;
+    }
+    body{
+        min-height:100vh;
+    }
+}
+@media(max-width: 992px) { /* -lg- */
+    body{
+        padding: 10px 0 0 0;
+    }
+    .scorePanel{
+        display:none;
+    }
+    .questionScore{
+        display:none;
+    }
+    .quizzSectionContent img{
+        width: 200px;
+        height: 200px;
+        margin: 20px auto 0;
+        display: block;
+    }
+    .questionContent .list-group{
+        display:block;
+        width:auto;
+    }
+    .questionContent > div{
+        display:block;
+    }
+    
+    .content{
+        background:rgba(230,231,232,0.5);
+        padding: 40px 10px 20px 10px;
+        margin-bottom: 20px;
+    }
+    .bannerPubContainer{
+        margin-bottom:20px;
+    }
+}

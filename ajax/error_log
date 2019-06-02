@@ -1,0 +1,830 @@
+[15-Nov-2018 15:54:20 Europe/Lisbon] PHP Notice:  Array to string conversion in /home/quemsabe/public_html/JOGOS/ajax/save.php on line 13
+[15-Nov-2018 22:38:03 Europe/Lisbon] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1180948 bytes) in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 52
+[15-Nov-2018 22:38:56 Europe/Lisbon] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1180948 bytes) in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 52
+[15-Nov-2018 22:39:15 Europe/Lisbon] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1180948 bytes) in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 52
+[15-Nov-2018 23:04:56 Europe/Lisbon] PHP Notice:  Undefined index: data in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 2
+[15-Nov-2018 23:05:20 Europe/Lisbon] PHP Notice:  Undefined index: data in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 2
+[15-Nov-2018 23:05:26 Europe/Lisbon] PHP Notice:  Undefined index: data in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 2
+[15-Nov-2018 23:06:28 Europe/Lisbon] PHP Notice:  Undefined index: data in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 2
+[15-Nov-2018 23:07:12 Europe/Lisbon] PHP Notice:  Undefined index: data in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 4
+[15-Nov-2018 23:07:39 Europe/Lisbon] PHP Notice:  Array to string conversion in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 6
+[15-Nov-2018 23:08:02 Europe/Lisbon] PHP Notice:  Array to string conversion in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 5
+[15-Nov-2018 23:10:44 Europe/Lisbon] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'DirectoryIterator::__construct(/uploads): failed to open dir: No such file or directory' in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php:5
+Stack trace:
+#0 /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php(5): DirectoryIterator->__construct('/uploads')
+#1 {main}
+  thrown in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 5
+[15-Nov-2018 23:10:55 Europe/Lisbon] PHP Notice:  Undefined index: data in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 3
+[15-Nov-2018 23:10:55 Europe/Lisbon] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'DirectoryIterator::__construct(/uploads): failed to open dir: No such file or directory' in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php:5
+Stack trace:
+#0 /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php(5): DirectoryIterator->__construct('/uploads')
+#1 {main}
+  thrown in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 5
+[15-Nov-2018 23:19:17 Europe/Lisbon] PHP Warning:  Invalid argument supplied for foreach() in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 23
+[15-Nov-2018 23:21:31 Europe/Lisbon] PHP Warning:  Invalid argument supplied for foreach() in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 23
+[15-Nov-2018 23:22:57 Europe/Lisbon] PHP Warning:  Invalid argument supplied for foreach() in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 23
+[15-Nov-2018 23:23:00 Europe/Lisbon] PHP Warning:  Invalid argument supplied for foreach() in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 23
+[15-Nov-2018 23:23:09 Europe/Lisbon] PHP Warning:  Invalid argument supplied for foreach() in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 23
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542277058P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310620SF2 - P13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542275173P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213600SF1 - R5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305148F - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300215SF1 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111601542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305148F - R3.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214714SF1 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305111F - P2.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227826116.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386471337R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278261P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300065SF1 - P7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214523SF1 - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112762P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866827318R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279426SF1 - R5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314589SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310406SF2 - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214661SF1 - P12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422050904.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542277993P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302910SF2 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384043383R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112724P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193879P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421124898.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205088P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214632SF1 - R10a.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384043052R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279426SF1 - P5.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1538522057wrong.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840514515P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193923P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310556SF2 - R11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305225F - P5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840523818R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302678SF2 - P13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219388013.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1538522211botao.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300077SF1 - P8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310453SF2 - P8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386676463R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214154SF1 - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281415SF1 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386471758P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386590006P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422779931.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386689801R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864731312R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310723SF2 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305570F - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690255P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542277874P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865924712P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865951118P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421935372.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386676794P.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542275342P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214686SF1 - P13.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278233P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300138SF1 - P11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111291542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305514F - R13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866817315R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299727SF1 - P18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299645SF1 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384048266R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421122573.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865930613P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280449SF1 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279983SF1 - R16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384048637R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279370SF1 - P4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213448SF1 - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422746325.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386457192P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278270P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384049379R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386470926P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422051516.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542275016P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386709408R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421937828.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542194049P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227818712.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865948317P.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384044125P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300148SF1 - P12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421093711.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310250SF2 - R2.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302785SF2 - R14 (1).JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386457593P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305714F - P18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274583P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542192002P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214732SF1 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300204SF1 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193798P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865937915P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690124P.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299552SF1 - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227497712.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310666SF2 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227517414.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281375SF1 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690396P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205151P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422770593.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302317SF2 - R3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542295438cmc.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227821714.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386679659R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386678807R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422781047.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279727SF1 - P11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112912P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864727811R.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422780926.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386688764R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219433618a.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300054SF1 - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305683F - P17.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111231542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866820416R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314591SF1 - R2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278187P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205442P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214456SF1 - P1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840497010R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279919SF1 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278044P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302678SF2 - R13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318244SF2 - R2.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384043714P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865937915R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421937317.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314802SF1 - P9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542129477P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318298SF2 - R3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305370F - R9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302479SF2 - R8 (COLOCAR 1834 por cima da  IMAGEM).jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193536P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300054SF1 - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386588753P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220522711.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214743SF1 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299462SF1 - R12.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299997SF1 - R3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386472119R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866802511R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386709388P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690124R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214743SF1 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302638SF2 - R12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305683F - R17.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305189F - R4.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310406SF2 - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386590828R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310303SF2 - R3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421937989.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386688522R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421123074.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542296073channel_sections.PNG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302378SF2 - R5.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542295657cmc.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214457SF1 - R1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280394SF1 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310479SF2 - P9.jpeg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214284SF1 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112686P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299690SF1 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542296088cmc.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214200SF1 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278177P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864746216P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280316SF1 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205056P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866813114R.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840511514P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384049379P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278157P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279919SF1 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302554SF2 - R10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305607F - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690899R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314699SF1 - R4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300124SF1 - R10a.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214244SF1 - R16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299970SF1 - P1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214754SF1 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279773SF1 - R12.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384042741R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302316SF2 - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302286SF2 - R2.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299997SF1 - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213740SF1 - P8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279878SF1 - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690527P.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386675962P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542296088154229530828062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300215SF1 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299727SF1 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690255R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302847SF2 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864752718R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274765P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278119P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302440SF2 - R7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278205P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302979SF2 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864749817R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227492911.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314762SF1 - P7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279773SF1 - P12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193730P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866817315P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386469914R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305332F - P8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310250SF2 - P2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314437SF2 - P1 (PRETO E BRANCO).png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302345SF2 - R4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214507SF1 - R2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384043714R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305548F - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840497010P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214555SF1 - R5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305570F - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386469914P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214103SF1 - P13.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220524512.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299552SF1 - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386676794R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193548P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386679268R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112607P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384720163R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300226SF1 - P18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279829SF1 - P13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211284316.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300625SF1 - R5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310588SF2 - R12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213346SF1 - R1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310743SF2 - P18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866813114P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214327SF1 - P18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279468SF1 - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281375SF1 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542275219P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422780454.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112139P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213792SF1 - R9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300773SF1 - P5.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300098SF1 - P9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1538522146right.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281252SF1 - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386590367P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386455921P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302520SF2 - R9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866919813P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214506SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279627SF1 - P9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112099P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278217P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220536916.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278245P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314610SF1 - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865934014P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220527214.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229565728062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214154SF1 - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314568SF1 - P1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386687662R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384048637P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278005P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302601SF2 - R11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866810013R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386678055R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281286SF1 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211265111.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299645SF1 - R16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422051697.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219389514.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300148SF1 - R12.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318467SF2 - R4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112843P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205430P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305647F - R16.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302785SF2 - P14.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866912310P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866922913P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300172SF1 - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299604SF1 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274823P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305646F - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280077SF1 - P18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542296104apu_twitter.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421935251.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314763SF1 - R7             SE POSSÌVEL COLOCAR    1865 na foto.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542295703channel_sections.PNG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280449SF1 - P18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310370SF2 - R5.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300186SF1 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866827318P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422051969.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280077SF1 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205168P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840514515R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690879P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279311SF1 - R3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421919881.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542295703cmc.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421935864.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386688401P.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422051848.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314568SF1 - R1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214604SF1 - R8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281012SF1 - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211268612.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111661542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386689902R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305298F - R7.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229548828062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386688653R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214472SF1 - R2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314747SF1 - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279229SF1 - R1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386591159P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384048266P.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227817711.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111121542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214647SF1 - R11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386679248P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384048988P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300160SF1 - P13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314698SF1 - P4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280359SF1 - R16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386455931R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864724810P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213693SF1 - P7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302408SF2 - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421294772.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219395016.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214586SF1 - P7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193894P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386689902P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214284SF1 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542194336P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227526316.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310428SF2 - P7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193949P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213539SF1 - P4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542109463P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310207SF2 - P1 (PRETO E BRANCO).png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214704SF1 - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310556SF2 - P11.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111331542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1538522180wrong.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305714F - R18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279675SF1 - R10a.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314824SF1 - R10a.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421121392.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865934214R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278058P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866799410R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302520SF2 - P9.jpeg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274977P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111001542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229607328062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213448SF1 - R3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542109343P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864742815P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214573SF1 - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302286SF2 - P2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278134P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384728356P.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840521117R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305189F - P4.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866915911R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274462P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193525P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310368SF2 - P5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314849SF1 - R11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314781SF1 - R8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542275301P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422780052.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384042741P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386471337P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213651SF1 - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386590367R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865924712R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213599SF1 - P5.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299514SF1 - P13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300160SF1 - R13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214714SF1 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279468SF1 - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214620SF1 - P9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300226SF1 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384728356R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213345SF1 - P1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227823414.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386470245R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305297F - P7.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279263SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866807112R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302255SF2 - R1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214555SF1 - P5.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299514SF1 - R13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220544216.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865951218R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422781579.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310650SF2 - R14 (1).JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111391542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280394SF1 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213976SF1 - R11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211288217.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214604SF1 - P8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279728SF1 - R11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214537SF1 - R4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229543828062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205460P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219404918a.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866810013P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422746696.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302408SF2 - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214103SF1 - R13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386590828P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278167P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422780203.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422781198.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205214P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386689801P.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421123946.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219397717.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866919913R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386588852R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542296104banner01.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302979SF2 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278031P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310706SF2 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386678055P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227530117.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384044125R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300172SF1 - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278104P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213740SF1 - R8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542295488channel_sections.PNG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305112F - R2.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314802SF1 - R9     COLOCAR na FOTO  Séc.  XVIII e XIX.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300139SF1 - R11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220543018.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300436SF1 - R5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205183P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211260810.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421935985.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229333428062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542303027SF2 - P18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864739714R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229198528062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384720163P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112394P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386675962R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279830SF1 - R13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214537SF1 - P4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305481F - P12.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153847306313R.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542291944apu_twitter.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280278SF1 - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386586521P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112649P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318243SF2 - P2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279520SF1 - P7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112880P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305332F - R8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302847SF2 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866920713P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310650SF2 - P14.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219382410.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214472SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866929815R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310708SF2 - R16.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542109375P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112437P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305079F - P1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865948417R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211276514.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214662SF1 - R12.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840523818P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865930713R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274716P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278018P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386688764P.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300077SF1 - R8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227534218.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866806912P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280316SF1 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314780SF1 - P8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865941816R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865917510R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220525813.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422768281542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864742915R.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305225F - R5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864736713R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386586521R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310743SF2 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227784315.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278281P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205340P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386688512P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214732SF1 - R16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281333SF1 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866799410P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214523SF1 - R3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840500311P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214632SF1 - P10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386589304P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386588763R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279310SF1 - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227824515.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227501713.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866913710P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422780585.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866820416P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864731312P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274411P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299984SF1 - R2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229383728062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840505312P.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227828118.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279675SF1 - P10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305453F - P11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542275263P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840508713P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280277SF1 - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279572SF1 - P8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214244SF1 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386591159R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214646SF1 - P11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279572SF1 - R8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314824SF1 - P10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386587993R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314730SF1 - R5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281253SF1 - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310303SF2 - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214573SF1 - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864725010R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422050211.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227827017.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542319071SF2 - P4.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280359SF1 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840511514R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302440SF2 - P7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299690SF1 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211291318.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310517SF2 - P10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542291827apu_twitter.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864752718P.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386678376P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112489P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422050372.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310588SF2 - P12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111481542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302637SF2 - P12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310323SF2 - P4.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205257P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314611SF1 - R3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299982SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220547318a.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153847306313P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422748239.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213539SF1 - R4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542191988P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310208SF2 - R1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865941716P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421936296.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386470926R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386678376R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310723SF2 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205245P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227816710.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422747177.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422744643.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866928014R.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112252P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386457202R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220534018.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281012SF1 - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864746216R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281286SF1 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865917510P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213976SF1 - P11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211280215.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219386712.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866823617R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542303027SF2 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302910SF2 - R16.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386472119P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302600SF2 - P11.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205368P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213693SF1 - R7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386689993P.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213921SF1 - P10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302254SF2 - P1 (PRETO E BRANCO).png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318298SF2 - P3.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213791SF1 - P9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305263F - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214704SF1 - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314730SF1 - P5.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318576SF2 - P5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866922113P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193977P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386679659P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279983SF1 - P16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305481F - R12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421123545.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214688SF1 - R13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310620SF2 - R13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866823517P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305453F - R11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384048988R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220546017.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111401542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386590016R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318691SF2 - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111541542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213921SF1 - R10a.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193824P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421124387.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422768191542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229353328062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112354P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864736613P.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386471758R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386589665R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300012SF1 - P4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386589304R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840517616P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305370F - P9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864739714P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227521915.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302343SF2 - P4.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386687662P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422050583.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213391SF1 - R2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318465SF2 - P4.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840517616R.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299462SF1 - P12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274632P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310428SF2 - R7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274669P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193585P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205036P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690396R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318691SF2 - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865921111R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866915811P.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386457603R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386589665P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205272P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305079F - R1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193782P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386688401R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214754SF1 - P18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300013SF1 - R4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840508713R.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281333SF1 - R16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302479SF2 - P8.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421125689.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227487410.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153865921111P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422747658.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214201SF1 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112801P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384043052P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112567P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274929P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214328SF1 - R18.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305607F - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542281415SF1 - P18.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214037SF1 - R12.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15384043383P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205227P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422745844.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279228SF1 - P1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422768101542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300037SF1 - R5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302377SF2 - P5.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193867P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542278092P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305513F - P13.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111171542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154227820513.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386470245P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300205SF1 - R16.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280039SF1 - P17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193629P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542302554SF2 - P10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279265SF1 - R2.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840505312R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840521117P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421935533.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219385611.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386690698P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193598P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154211272613.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205473P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214037SF1 - P12.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542213652SF1 - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542193855P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299970SF1 - R1.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386688653P.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422778439.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1538522057right.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422744112.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422781348.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305409F - R10.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15423111071542213385SF1 - P2.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314746SF1 - P6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542299604SF1 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154229530828062017100355.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542280039SF1 - R17.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386689993R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864727811P.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386676463P.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310479SF2 - R9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866802511P.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421121001.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15421920022.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386588852P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214619SF1 - P9.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542214586SF1 - R7.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422780324.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154220521510.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310666SF2 - R15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15422051105.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205196P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205110P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542205021P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542274873P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1538522146wrong.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153866912810R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300186SF1 - P15.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310326SF2 - R4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279879SF1 - R14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153840500311R.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542300123SF1 - P10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542310517SF2 - R10.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542318579SF2 - R5.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386678777P.gif): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305547F - P14.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542112305P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542305263F - R6.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads153864749717P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads15386587993P.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542314849SF1 - P11.jpg): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads1542279371SF1 - R4.png): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[15-Nov-2018 23:24:21 Europe/Lisbon] PHP Warning:  unlink(../uploads154219392315.JPG): No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/deleteUnusedImages.php on line 25
+[10-Feb-2019 23:00:38 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:00:38 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:00:38 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[10-Feb-2019 23:00:39 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:00:39 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:00:39 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[10-Feb-2019 23:00:39 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:00:39 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:00:39 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[10-Feb-2019 23:01:03 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:01:03 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:01:03 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[10-Feb-2019 23:01:11 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:01:11 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:01:11 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[10-Feb-2019 23:01:12 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:01:12 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:01:12 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[10-Feb-2019 23:01:22 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[30-May-2019 23:54:11 Europe/Lisbon] PHP Warning:  ZipArchive::close(): Write error: Disk quota exceeded in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 67
+[30-May-2019 23:54:11 Europe/Lisbon] PHP Warning:  filesize(): stat failed for ../tmp/mobile-version.zip in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 71
+[30-May-2019 23:54:11 Europe/Lisbon] PHP Warning:  readfile(../tmp/mobile-version.zip): failed to open stream: No such file or directory in /home/quemsabe/public_html/JOGOS/ajax/downloadMobileVersion.php on line 74
+[02-Jun-2019 15:39:03 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:39:23 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:43:18 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:43:19 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:43:20 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:43:21 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:43:22 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:43:23 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:44:12 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:44:57 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:48:36 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 15:49:11 Europe/Lisbon] PHP Notice:  Undefined index: image in /home/quemsabe/public_html/JOGOS/ajax/saveBannerPub.php on line 3
+[02-Jun-2019 16:21:06 Europe/Lisbon] PHP Notice:  Undefined index: file in /home/quemsabe/public_html/JOGOS/ajax/saveImage.php on line 5

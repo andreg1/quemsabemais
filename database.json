@@ -1,1 +1,6 @@
-{"username":"quemsabemais","password":"-1009294837","categories":{"1":{"name":"Teste Category 1"},"2":{"name":"Teste Category 2"},"4":{"name":"Nova Categoria"}},"quizzes":{"1":{"name":"teste quizz1","categoryID":"1","questions":{"1":{"question":"teste","options":{"1":"a","2":"b","3":"c","4":"d"},"explanation":"asd","correctAnswer":"3","correctAnswerImage":{"imageName":"Anime-wallpaper-11116769.jpg","imagePath":"C:\\Users\\Andre\\Work\\quemsabemais\\uploads\\1533606143Anime-wallpaper-11116769.jpg "}}}},"2":{"name":"Quizz1","categoryID":"4","questions":{"1":{"question":"Pergunta 1?","options":{"1":"a","2":"b","3":"c","4":"d"},"explanation":"Explicacao","correctAnswer":"2","correctAnswerImage":{"imageName":"Anime-Phone-Backgrounds-HD.jpg","imagePath":"C:\\Users\\Andre\\Work\\quemsabemais\\uploads\\1533606262Anime-Phone-Backgrounds-HD.jpg "}},"2":{"question":"Pergunta 2?","options":{"1":"ab","2":"cd","3":"ef","4":"gh"},"explanation":"Explicacao","correctAnswer":"3","correctAnswerImage":{"imageName":"Anime-Phone-Backgrounds-HD.jpg","imagePath":"C:\\Users\\Andre\\Work\\quemsabemais\\uploads\\1533606120Anime-Phone-Backgrounds-HD.jpg "}}}},"3":{"categoryID":"1","name":"teste quizz2"}}}
+{
+	"username": "quemsabemais",
+	"password": "-1009294837",
+	"categories": {},
+	"quizzes": {}
+}
