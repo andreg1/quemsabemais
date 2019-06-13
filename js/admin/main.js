@@ -59,7 +59,8 @@ $(document).ready(function() {
 		removeQuestion();
 		hideQuestionView();
 	});
-	$("#questionForm input[type=file]").change(function() {
+	$("#quizzForm input[type=file]").change(function() {
+		//console.log(this);
 		previewImage(this);
 	});
 
@@ -76,9 +77,9 @@ $(document).ready(function() {
 		db.cancelQuizzEdit();
 	});
 
-	// $("#updateBannerPub").click(() => {
-	// 	saveBannerPub();
-	// });
+	$("#updateBannerPub").click(() => {
+		saveQuizzBannerPub();
+	});
 
 	$("#downloadMobileVersion").click(() => {
 		downloadMobileVersion();
@@ -97,7 +98,7 @@ function Login() {
 function loadDashboard() {
 	loadCategories();
 	loadQuizzes();
-	// loadBannerPub();
+	//loadBannerPub();
 }
 
 /* #region Category */
@@ -147,8 +148,7 @@ function loadQuizzes() {
 	$("#tblQuizzes tbody").empty();
 	$.each(db.getQuizzes(), (quizzID, quizz) => {
 		var questionCount = quizz.questions === undefined ? 0 : Object.keys(quizz.questions).length;
-		var categoryName =
-			quizz.categoryID !== undefined ? db.getCategoryByID(quizz.categoryID).name : "Sem categoria";
+		var categoryName = quizz.categoryID !== undefined ? db.getCategoryByID(quizz.categoryID).name : "Sem categoria";
 
 		$("#tblQuizzes tbody").append(`
             <tr data-id=${quizzID}>
@@ -176,6 +176,11 @@ function editQuizz($row) {
 	$("#quizzModal select[name=quizzCategory]").val(quizz.categoryID);
 	$("#quizzModal #quizzModalTitle").text(`Editar Quizz: "${quizz.name}"`);
 	$("#quizzModal input[name=quizzHidden]").prop("checked", quizz.hidden == "true");
+
+	$("#quizzBannerPubFilePreview").attr("src", quizz.bannerPub !== undefined ? quizz.bannerPub.imagePath : "");
+	$("input[name=quizzBannerPubURL]").val(quizz.bannerPub !== undefined ? quizz.bannerPub.url : "");
+	$("input[name=quizzBannerPubFile]").val("");
+
 	db.loadQuestions(quizz.questions, loadQuestionsList);
 	$("#quizzModal").modal("toggle");
 }
@@ -184,14 +189,33 @@ function deleteQuizz($row) {
 	db.deleteQuizz(quizzID);
 	loadQuizzes();
 }
-function saveQuizz() {
+async function saveQuizz() {
 	var name = $("#quizzForm input[name=quizzName]").val();
 	var categoryID = $("#quizzForm select[name=quizzCategory]").val();
 	var hidden = $("#quizzForm input[name=quizzHidden]").prop("checked");
 
-	db.saveQuizz(categoryID, name, hidden.toString());
+	let bannerPub = await saveQuizzBannerPub();
+
+	await db.saveQuizz(categoryID, name, hidden.toString(), bannerPub);
 	loadQuizzes();
 }
+
+function saveQuizzBannerPub() {
+	let bannerPub = $("#quizzForm input[name=quizzBannerPubFile]")[0].files[0];
+	var url = $("input[name=quizzBannerPubURL]").val();
+	if (bannerPub === undefined) {
+		return { url, image: null };
+	} else {
+		let bannerPubReader = new FileReader();
+		return new Promise(resolve => {
+			bannerPubReader.readAsDataURL(bannerPub);
+			bannerPubReader.onload = () => {
+				resolve({ url, image: bannerPub });
+			};
+		});
+	}
+}
+
 async function saveQuestion() {
 	let question = $("#questionForm input[name=question]").val();
 	let explanation = $("#questionForm textarea[name=answerExplanation]").val();
@@ -209,17 +233,11 @@ async function saveQuestion() {
 
 	let questionImage = await saveQuestionImage();
 	let answerImage = await saveAnswerImage();
-	let bannerPub = await saveBannerPub();
+	let bannerPub = await saveQuestionBannerPub();
 
-	db.saveQuestion(
-		_question,
-		questionImage,
-		answerImage,
-		bannerPub,
-		hideQuestionView,
-		loadQuestionsList
-	);
+	db.saveQuestion(_question, questionImage, answerImage, bannerPub, hideQuestionView, loadQuestionsList);
 }
+
 function saveQuestionImage() {
 	let questionImage = $("#quizzForm input[name=questionImage]")[0].files[0];
 	if (questionImage === undefined) {
@@ -248,9 +266,9 @@ function saveAnswerImage() {
 		});
 	}
 }
-function saveBannerPub() {
-	let bannerPub = $("#quizzForm input[name=bannerPubFile]")[0].files[0];
-	var url = $("input[name=bannerPubURL]").val();
+function saveQuestionBannerPub() {
+	let bannerPub = $("#quizzForm input[name=questionBannerPubFile]")[0].files[0];
+	var url = $("input[name=questionBannerPubURL]").val();
 	if (bannerPub === undefined) {
 		return { url, image: null };
 	} else {
@@ -268,7 +286,7 @@ function saveBannerPub() {
 function previewImage(input) {
 	if (input.files && input.files[0]) {
 		var reader = new FileReader();
-
+		//console.log($(input).attr("name") + "Preview");
 		reader.onload = function(e) {
 			$("#" + $(input).attr("name") + "Preview").attr("src", e.target.result);
 		};
@@ -283,13 +301,11 @@ function editQuestion(index) {
 	$("#questionForm textarea").val(data.explanation);
 	$("#questionForm input:file").val("");
 	$("#questionImagePreview").attr("src", data.image !== undefined ? data.image.imagePath : "");
-	$("#answerImagePreview").attr(
-		"src",
-		data.correctAnswerImage !== undefined ? data.correctAnswerImage.imagePath : ""
-	);
+	$("#answerImagePreview").attr("src", data.correctAnswerImage !== undefined ? data.correctAnswerImage.imagePath : "");
 	//console.log(data);
-	$("#bannerPub").attr("src", data.bannerPub !== undefined ? data.bannerPub.imagePath : "");
-	$("input[name=bannerPubURL]").val(data.bannerPub !== undefined ? data.bannerPub.url : "");
+	$("#questionBannerPubFilePreview").attr("src", data.bannerPub !== undefined ? data.bannerPub.imagePath : "");
+	$("input[name=questionBannerPubFile]").val("");
+	$("input[name=questionBannerPubURL]").val(data.bannerPub !== undefined ? data.bannerPub.url : "");
 	for (var index in data.options) {
 		$(`#questionForm input[name=option${index}]`).val(data.options[index]);
 	}
@@ -298,9 +314,7 @@ function editQuestion(index) {
 	$("#removeQuestionButton").removeClass("d-none");
 }
 function removeQuestion() {
-	var index = $("#questionsList .list-group-item-action").index(
-		$("#questionsList .list-group-item-action.active")
-	);
+	var index = $("#questionsList .list-group-item-action").index($("#questionsList .list-group-item-action.active"));
 	db.removeQuestion(index);
 	hideQuestionView();
 	loadQuestionsList();
@@ -319,25 +333,19 @@ function loadQuestionsList() {
 		db.getQuestions().forEach(value => {
 			$("#questionsList").append(
 				`<button type="button" class="list-group-item list-group-item-action ${
-					value.image === undefined && value.correctAnswerImage === undefined
-						? "list-group-item-danger"
-						: ""
+					value.image === undefined && value.correctAnswerImage === undefined ? "list-group-item-danger" : ""
 				}">${value.question}</button>`
 			);
 		});
 	} else {
-		$("#questionsList").html(
-			'<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>'
-		);
+		$("#questionsList").html('<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>');
 	}
 }
 
 //modal interactions
 function hardResetQuizzModal() {
 	softResetQuizzModal();
-	$("#questionsList").html(
-		'<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>'
-	);
+	$("#questionsList").html('<button type="button" class="list-group-item list-group-item-action">Não existem questões ainda</button>');
 	$("#quizzForm input[name=quizzName]").val("");
 	$("#quizzForm input[name=quizzHidden]").prop("checked", false);
 	clearQuestionView();

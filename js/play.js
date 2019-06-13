@@ -5,22 +5,24 @@ var quizzesList;
 var playersList = [];
 var engine;
 
-//function loadLive(loadSelectedQuizz, loadBannerPub) {
-function loadLive(loadSelectedQuizz) {
+function loadLive(loadSelectedQuizz, loadBanner) {
+	//function loadLive(loadSelectedQuizz) {
 	$.getJSON("database.json", fileData => {
 		data = fileData;
 		categoriesList = data.categories;
 		quizzesList = data.quizzes;
 
 		loadSelectedQuizz();
+		loadBanner();
 	});
 }
-//function loadMobile(loadSelectedQuizz, loadBannerPub) {
-function loadMobile(loadSelectedQuizz) {
+function loadMobile(loadSelectedQuizz, loadBanner) {
+	//function loadMobile(loadSelectedQuizz) {
 	categoriesList = data.categories;
 	quizzesList = data.quizzes;
 
 	loadSelectedQuizz();
+	loadBanner();
 }
 
 function selectQuizz(quizzID) {
@@ -54,9 +56,7 @@ class quizzEngine {
 		// this.questionsPerSerie = 1;
 		// this.numberOfSeries = 4;
 		this.questionsPerSerie = 3;
-		this.numberOfSeries =
-			Math.floor(questionsList.length / this.players.length / this.questionsPerSerie) *
-			this.players.length;
+		this.numberOfSeries = Math.floor(questionsList.length / this.players.length / this.questionsPerSerie) * this.players.length;
 
 		// if(this.players[0]=="player1"){
 		//     this.questionsPerSerie = 1;
@@ -178,21 +178,15 @@ class quizzEngine {
 			// console.log(turns);
 			// console.log(turn);
 
-			html += `<div class="${
-				turn.player == currentPlayer ? "currentPlayer" : ""
-			}"><label class="questionsAnswered">${turn.currentQuestionIndex +
+			html += `<div class="${turn.player == currentPlayer ? "currentPlayer" : ""}"><label class="questionsAnswered">${turn.currentQuestionIndex +
 				1}/${questionsPerSerie}</label><label class="playerName">${turn.player}</label></div>`;
 
 			counter++;
 		}
 		html += `</div>
-        <div class="questionScore"><label>Vale ${points} ${
-			points > 1 ? "pontos" : "ponto"
-		}</label></div>
+        <div class="questionScore"><label>Vale ${points} ${points > 1 ? "pontos" : "ponto"}</label></div>
         <div class="timerSection"></div>
-        <div class="seriesInfo"><label>Série: ${this.currentTurn + 1} de ${
-			this.turns.length
-		}</label></div>`;
+        <div class="seriesInfo"><label>Série: ${this.currentTurn + 1} de ${this.turns.length}</label></div>`;
 		panel.append(html);
 	}
 	getCurrentQuestion() {
@@ -242,9 +236,7 @@ class quizzEngine {
             <h3 class="question">${this.getCurrentQuestion().question}</h3>
             <div class="row">
                 <div class="col">${this.getCurrentQuestion().explanation}</div>
-                <img src="${
-									this.getCurrentQuestion().correctAnswerImage.imagePath
-								}" style="padding-right:15px;">
+                <img src="${this.getCurrentQuestion().correctAnswerImage.imagePath}" style="padding-right:15px;">
             </div>
             
             `;
@@ -266,8 +258,7 @@ class quizzEngine {
 
 		if (
 			this.turns.indexOf(this.getCurrentTurn()) == this.turns.length - 1 &&
-			this.getCurrentSeries().indexOf(this.getCurrentQuestion()) ==
-				this.getCurrentSeries().length - 1
+			this.getCurrentSeries().indexOf(this.getCurrentQuestion()) == this.getCurrentSeries().length - 1
 		) {
 			// last series and last question
 			$("#nextQuestionButton").text("Ver Resultados");
@@ -299,30 +290,14 @@ class quizzEngine {
 		});
 
 		scores.forEach(score => {
-			html += `<label class="form-control">${score[0]} : ${score[1]} (${(score[2] / 1000).toFixed(
-				2
-			)}s)</label>`;
+			html += `<label class="form-control">${score[0]} : ${score[1]} (${(score[2] / 1000).toFixed(2)}s)</label>`;
 		});
 
 		panel.html(html);
 	}
 	loadBannerPub() {
 		let bannerPub = this.getBannerPub();
-		if (bannerPub !== undefined && bannerPub.imagePath !== undefined) {
-			$(".bannerPubContainer a").show();
-			$(".bannerPubContainer img").attr("src", bannerPub.imagePath);
-			if (bannerPub.url !== undefined) {
-				if (bannerPub.url.length) {
-					$(".bannerPubContainer a").attr("href", bannerPub.url);
-					$(".bannerPubContainer a").css("pointer-events", "all");
-				}
-			} else {
-				$(".bannerPubContainer a").css("pointer-events", "none");
-			}
-		} else {
-			$(".bannerPubContainer img").attr("src", "");
-			$(".bannerPubContainer a").hide();
-		}
+		loadBannerPub(bannerPub);
 	}
 
 	selectAnswer(selectedOption) {
@@ -410,11 +385,11 @@ class quizzEngine {
 
 $(document).ready(function() {
 	if (liveVersion) {
-		//loadLive(loadSelectedQuizz, loadBannerPub);
-		loadLive(loadSelectedQuizz);
+		loadLive(loadSelectedQuizz, loadBanner);
+		//loadLive(loadSelectedQuizz);
 	} else {
-		//loadMobile(loadSelectedQuizz, loadBannerPub);
-		loadMobile(loadSelectedQuizz);
+		loadMobile(loadSelectedQuizz, loadBanner);
+		//loadMobile(loadSelectedQuizz);
 	}
 });
 
@@ -481,5 +456,28 @@ function loadPlayerList() {
 		$("#playMenu").removeClass("d-none");
 	} else {
 		$("#playMenu").addClass("d-none");
+	}
+}
+
+function loadBanner() {
+	let bannerPub = getSelectedQuizz().bannerPub;
+	loadBannerPub(bannerPub);
+}
+
+function loadBannerPub(bannerPub) {
+	if (bannerPub !== undefined && bannerPub.imagePath !== undefined) {
+		$(".bannerPubContainer a").show();
+		$(".bannerPubContainer img").attr("src", bannerPub.imagePath);
+		if (bannerPub.url !== undefined) {
+			if (bannerPub.url.length) {
+				$(".bannerPubContainer a").attr("href", bannerPub.url);
+				$(".bannerPubContainer a").css("pointer-events", "all");
+			}
+		} else {
+			$(".bannerPubContainer a").css("pointer-events", "none");
+		}
+	} else {
+		$(".bannerPubContainer img").attr("src", "");
+		$(".bannerPubContainer a").hide();
 	}
 }

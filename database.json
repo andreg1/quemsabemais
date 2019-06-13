@@ -1,6 +1,1 @@
-{
-	"username": "quemsabemais",
-	"password": "-1009294837",
-	"categories": {},
-	"quizzes": {}
-}
+{"username":"quemsabemais","password":"-1009294837","categories":{"1":{"name":"Teste"}},"quizzes":{"1":{"name":"Teste Quizz","categoryID":"1","hidden":"false","questions":{"1":{"question":"O apreciador e conhecedor de vinhos \u00e9 o:<br> ol\u00e1","options":{"1":"a","2":"b","3":"c"},"explanation":"aaaa\nbom dia","correctAnswer":"2","image":{"imageName":"300x150.png","imagePath":"uploads\/1560422572300x150.png"},"correctAnswerImage":{"imageName":"300x150.png","imagePath":"uploads\/1560422572300x150.png"}}},"bannerPub":{"url":""}}}}

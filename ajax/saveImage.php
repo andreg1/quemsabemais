@@ -5,7 +5,7 @@
 $file = $_FILES['file'];
 //$fileName = time() . $imageName;
 $fileName = time() . $file["name"];
-$filePath = $_SERVER["DOCUMENT_ROOT"] . '/JOGOS/uploads/';
+$filePath = '../uploads/';
 
 move_uploaded_file($file['tmp_name'], $filePath . $fileName);
 //$filePath = "/uploads/" . $fileName;

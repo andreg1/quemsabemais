@@ -25,7 +25,7 @@ export function cancelQuestionEdit() {
 }
 
 function Save() {
-	//console.log(data);
+	console.log(data);
 	$.ajax({
 		url: "ajax/save.php",
 		data: { data },
@@ -73,7 +73,7 @@ export function getQuizzes() {
 	return quizzesList;
 }
 
-export function saveQuizz(categoryID, name, hidden) {
+export async function saveQuizz(categoryID, name, hidden, bannerPub) {
 	var quizzID = editedQuizz !== undefined ? editedQuizz : getNextQuizzID();
 
 	quizzesList[quizzID] = { name, categoryID, hidden, questions: {} };
@@ -81,6 +81,8 @@ export function saveQuizz(categoryID, name, hidden) {
 	questionsList.forEach((question, index) => {
 		quizzesList[quizzID].questions[index + 1] = question;
 	});
+
+	quizzesList[quizzID].bannerPub = await saveBannerPub(bannerPub);
 	questionsList = [];
 	editedQuizz = undefined;
 	Save();
@@ -99,6 +101,7 @@ export function deleteQuizz(quizzID) {
 export function getCategoryByID(categoryID) {
 	return categoriesList[categoryID];
 }
+
 function saveImage(file) {
 	if (file === null) return null;
 	var formData = new FormData();
@@ -116,31 +119,18 @@ function saveImage(file) {
 		});
 	});
 }
-export async function saveQuestion(
-	question,
-	questionImage,
-	answerImage,
-	bannerPub,
-	hideQuestionView,
-	updateQuestions
-) {
+export async function saveQuestion(question, questionImage, answerImage, bannerPub, hideQuestionView, updateQuestions) {
 	questionImage = await saveImage(questionImage);
 	answerImage = await saveImage(answerImage);
 	bannerPub = await saveBannerPub(bannerPub);
 
 	if (editedQuestion !== undefined) {
 		question.image = questionImage ? questionImage : questionsList[editedQuestion].image;
-		question.correctAnswerImage = answerImage
-			? answerImage
-			: questionsList[editedQuestion].correctAnswerImage;
+		question.correctAnswerImage = answerImage ? answerImage : questionsList[editedQuestion].correctAnswerImage;
 		questionsList[editedQuestion] = question;
 		question.bannerPub = {};
-		question.bannerPub.imagePath = bannerPub.imagePath
-			? bannerPub.imagePath
-			: questionsList[editedQuestion].bannerPub.imagePath;
-		question.bannerPub.url = bannerPub.url
-			? bannerPub.url
-			: questionsList[editedQuestion].bannerPub.url;
+		question.bannerPub.imagePath = bannerPub.imagePath ? bannerPub.imagePath : questionsList[editedQuestion].bannerPub.imagePath;
+		question.bannerPub.url = bannerPub.url ? bannerPub.url : questionsList[editedQuestion].bannerPub.url;
 	} else {
 		questionsList.push(question);
 	}
@@ -148,10 +138,6 @@ export async function saveQuestion(
 	hideQuestionView();
 	updateQuestions();
 }
-
-// export function getBannerPub() {
-// 	return data.bannerPub;
-// }
 
 function saveBannerPub(file) {
 	if (file.image === null) {

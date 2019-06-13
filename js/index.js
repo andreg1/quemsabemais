@@ -12,7 +12,7 @@ function loadLive(loadCategories) {
 		quizzesList = data.quizzes;
 
 		loadCategories();
-		loadBannerPub();
+		//loadBannerPub();
 	});
 }
 //function loadMobile(loadCategories, loadBannerPub) {
@@ -21,7 +21,7 @@ function loadMobile(loadCategories) {
 	quizzesList = data.quizzes;
 
 	loadCategories();
-	loadBannerPub();
+	//loadBannerPub();
 }
 
 function getCategories() {
@@ -65,9 +65,7 @@ function loadCategories() {
 		if (quizzesList.length) {
 			html += `<h3>${category.name}`;
 			$.each(quizzesList, function(index, data) {
-				html += `<a href="play.html?id=${data.quizzID}"><h5 class="quizzCTA">${
-					data.quizz.name
-				}</h5></a>`;
+				html += `<a href="play.html?id=${data.quizzID}"><h5 class="quizzCTA">${data.quizz.name}</h5></a>`;
 			});
 			html += "</h3>";
 		}
